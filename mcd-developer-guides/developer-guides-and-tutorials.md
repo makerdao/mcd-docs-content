@@ -11,19 +11,19 @@ All guides are organized in sections and by proficiency levels within each secti
 ## Dai
 
 * [Dai Token](https://github.com/makerdao/developerguides/tree/master/dai/dai-token/dai-token.md)
-* [Dai in Smart Contracts](https://github.com/makerdao/developerguides/tree/master/dai/dai-in-smart-contracts/README.md)
-* [Dai Savings Rate integration guide](https://github.com/makerdao/developerguides/tree/master/dai/dsr-integration-guide/dsr-integration-guide-01.md)
+* [Dai in Smart Contracts](https://github.com/makerdao/developerguides/blob/master/dai/dai-in-smart-contracts/dai-in-smart-contracts.md)
+* [Dai Savings Rate integration guide](https://github.com/makerdao/developerguides/blob/master/dai/dsr-integration-guide/dsr-integration-guide.md)
 
 ## Developer Tools
 
 * [Test Chain Guide](https://github.com/makerdao/developerguides/tree/master/devtools/test-chain-guide/test-chain-guide.md)
-* [Introduction to Seth](https://github.com/makerdao/developerguides/tree/master/devtools/seth/seth-guide-01/seth-guide-01.md)
+* [Introduction to Seth](https://github.com/makerdao/developerguides/blob/master/devtools/seth/seth-guide/seth-guide.md)
 * [Working with DSProxy](https://github.com/makerdao/developerguides/tree/master/devtools/working-with-dsproxy/working-with-dsproxy.md)
 
 ## Oasis Exchange
 
-* [Intro to OasisDEX Protocol](https://github.com/makerdao/developerguides/tree/master/Oasis/intro-to-oasis/intro-to-oasis-maker-otc.md)
-* [How to use Oasis Direct Proxy on OasisDEX Protocol](https://github.com/makerdao/developerguides/tree/master/Oasis/oasis-direct-proxy.md)
+* [Intro to OasisDEX Protocol](https://github.com/makerdao/developerguides/blob/master/Oasis/intro-to-oasis/intro-to-oasis.md)
+* [How to use Oasis Direct Proxy on OasisDEX Protocol](https://github.com/makerdao/developerguides/blob/master/Oasis/oasis-direct-proxy/oasis-direct-proxy.md)
 
 ## Governance
 
@@ -37,15 +37,15 @@ All guides are organized in sections and by proficiency levels within each secti
 ## MCD
 
 * [Introduction and Overview of Multi-Collateral Dai: MCD101](https://github.com/makerdao/developerguides/tree/master/mcd/mcd-101/mcd-101.md)
-* [Using MCD-CLI to create and close a Vault on Kovan](https://github.com/makerdao/developerguides/tree/master/mcd/mcd-cli/mcd-cli-guide-01/mcd-cli-guide-01.md)
-* [Using Seth to create and close a Vault on Kovan](https://github.com/makerdao/developerguides/tree/master/mcd/mcd-seth/mcd-seth-01.md)
+* [Using MCD-CLI to create and close a Vault on Kovan](https://github.com/makerdao/developerguides/blob/master/mcd/mcd-cli/mcd-cli-guide/mcd-cli-guide.md)
+* [Using Seth to create and close a Vault on Kovan](https://github.com/makerdao/developerguides/blob/master/mcd/mcd-seth/mcd-seth.md)
 * [Upgrading to MCD - overview for different partners](https://github.com/makerdao/developerguides/tree/master/mcd/upgrading-to-multi-collateral-dai/upgrading-to-multi-collateral-dai.md)
 * [Add a new collateral type to Maker Protocol - Kovan](https://github.com/makerdao/developerguides/tree/master/mcd/add-collateral-type-testnet/add-collateral-type-testnet.md)
 * [Intro to the Rate mechanism](https://github.com/makerdao/developerguides/tree/master/mcd/intro-rate-mechanism/intro-rate-mechanism.md)
 
 ## Partners
 
-* [Setting up real money transfers using Wyre API](https://github.com/makerdao/developerguides/tree/master/partners/wyre-guide-01/wyre-guide-01.md)
+* [Setting up real money transfers using Wyre API](https://github.com/makerdao/developerguides/blob/master/partners/wyre-guide/wyre-guide.md)
 
 ## Partner compilations
 
@@ -53,9 +53,9 @@ In order to ensure that integration partners can get up and running quickly, rel
 
 * [Upgrading to Multi-Collateral Dai](https://github.com/makerdao/developerguides/tree/master/mcd/upgrading-to-multi-collateral-dai/cli-mcd-migration.md)
 * [Exchanges](https://github.com/makerdao/developerguides/tree/master/exchanges/README.md)
-* [Wallets](https://github.com/makerdao/developerguides/tree/master/wallets/README.md)
-* [Remittance services](https://github.com/makerdao/developerguides/tree/master/remittance/README.md)
-* [Market Makers](https://github.com/makerdao/developerguides/tree/master/market-makers/README.md)
+* [Wallets](https://github.com/makerdao/developerguides/blob/master/wallets/wallets/wallets.md)
+* [Remittance services](https://github.com/makerdao/developerguides/blob/master/remittance/remittance.md)
+* [Market Makers](https://github.com/makerdao/developerguides/blob/master/market-makers/market-makers.md)
 
 ## Contribution guidelines
 
