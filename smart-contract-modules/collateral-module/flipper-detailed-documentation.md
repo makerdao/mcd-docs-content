@@ -9,8 +9,8 @@ description: The Maker Protocol's Collateral Auction House
 * \*\*\*\*[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
 * \*\*\*\*[**Contract Source**](https://github.com/makerdao/dss/blob/master/src/flip.sol)
 * **Etherscan**
-  * \*\*\*\*[**Flip Eth**](https://etherscan.io/address/0xd8a04f5412223f513dc55f839574430f5ec15531)
-  * \*\*\*\*[**Flip Bat**](https://etherscan.io/address/0xaa745404d55f88c108a28c86abe7b5a1e7817c07)
+  * \*\*\*\*[**Flip ETH-A**](https://etherscan.io/address/0xF32836B9E1f47a0515c6Ec431592D5EbC276407f)
+  * \*\*\*\*[**Flip BAT-A**](https://etherscan.io/address/0xf7c569b2b271354179aacc9ff1e42390983110ba#code)
 
 ## 1. Introduction \(Summary\)
 
@@ -46,6 +46,7 @@ description: The Maker Protocol's Collateral Auction House
 * `file` - function used by governance to set `beg`, `ttl`, and `tau`
 * `deal` - claim a winning bid / settles a completed auction
 * `yank` - used during Global Settlement to move `tend` phase auctions to the `End` by retrieving the collateral and repaying dai to the highest bidder.
+* `claw`: reduces the amount of litter in the Cat's box
 
 ### **Parameters Set By Governance \(through `file`\)**
 
@@ -53,7 +54,7 @@ description: The Maker Protocol's Collateral Auction House
 * `ttl`
 * `tau`
 
-Also, `Cat`'s `lump` and `chop` also inform how `Flip` works as the `lump` becomes the `Bid.lot` and influences, along with the `chop`, the `Bid.tab`.
+Also, `Cat`'s `dunk` and `chop` also inform how `Flip` works as the `dunk` becomes the `Bid.lot` and influences, along with the `chop`, the `Bid.tab`.
 
 ### Parameters Not Set By Governance
 
@@ -130,7 +131,7 @@ In the case of Global Settlement, the `End` is able to call `yank` on the Flippe
 
 ### Bounds on Operating Conditions
 
-Because `Flip.tend` compares the bidder's `bid` with the previous `bid * beg`, it will compare the two numbers at 10^63 precision \(`rad * wad`\). This means that any `bid` that is greater than 115,792,089,237,316 will cause an overflow. Governance should endeavour to not set `beg` or `lot` \(via `Cat.ilks[ilk].lump`\) so that it is likely that an auction keeper would end up `bid`'ding that much DAI during the `tend` phase. This is very unlikely so long as the target price of Dai remains 1 USD, but is included here for awareness.
+Because `Flip.tend` compares the bidder's `bid` with the previous `bid * beg`, it will compare the two numbers at 10^63 precision \(`rad * wad`\). This means that any `bid` that is greater than 115,792,089,237,316 will cause an overflow. Governance should endeavour to not set `beg` or `lot` \(via `Cat.ilks[ilk].dunk`\) so that it is likely that an auction keeper would end up `bid`'ding that much DAI during the `tend` phase. This is very unlikely so long as the target price of Dai remains 1 USD, but is included here for awareness.
 
 #### 1. [**See System Stabilizer Module Documentation**](https://docs.makerdao.com/smart-contract-modules/system-stabilizer-module)\*\*\*\*
 
