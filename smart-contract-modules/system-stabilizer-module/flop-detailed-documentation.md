@@ -8,7 +8,7 @@ description: The Maker Protocol's Debt Auction House
 * **Type/Category:** DSS —&gt; System Stabilizer Module
 * \*\*\*\*[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
 * \*\*\*\*[**Contract Source**](https://github.com/makerdao/dss/blob/master/src/flop.sol)
-* \*\*\*\*[**Etherscan**](https://etherscan.io/address/0x4d95a049d5b0b7d32058cd3f2163015747522e99)
+* \*\*\*\*[**Etherscan**](https://etherscan.io/address/0xa41b6ef151e06da0e34b009b86e828308986736d#code)\*\*\*\*
 
 ## 1. Introduction \(Summary\)
 

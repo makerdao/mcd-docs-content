@@ -8,7 +8,7 @@ description: The Maker Protocol's Surplus Auction House
 * **Type/Category:** DSS —&gt; System Stabilizer Module
 * \*\*\*\*[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
 * \*\*\*\*[**Contract Source**](https://github.com/makerdao/dss/blob/master/src/flap.sol)
-* \*\*\*\*[**Etherscan**](https://etherscan.io/address/0xdfe0fb1be2a52cdbf8fb962d5701d7fd0902db9f)
+* \*\*\*\*[**Etherscan**](https://etherscan.io/address/0xc4269cc7acdedc3794b221aa4d9205f564e27f0d#code)
 
 ## 1. Introduction \(Summary\)
 
