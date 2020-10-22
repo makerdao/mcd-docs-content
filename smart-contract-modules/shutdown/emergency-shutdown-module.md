@@ -2,7 +2,7 @@
 description: The ESM is the trigger system for the shutdown of the Maker Protocol
 ---
 
-# Emergency Shutdown Module
+# ESM - Detailed Documentation
 
 * **Contract Name:** esm.sol
 * **Type/Category:** Emergency Shutdown Module
@@ -14,7 +14,7 @@ description: The ESM is the trigger system for the shutdown of the Maker Protoco
 
 The Emergency Shutdown Module \(ESM\) is a contract with the ability to call `End.cage()` to trigger the Shutdown of the Maker Protocol.
 
-![](../.gitbook/assets/mcd-system-2.0%20%282%29.png)
+![](../../.gitbook/assets/mcd-system-2.0%20%282%29.png)
 
 ## 2. Contract Details
 

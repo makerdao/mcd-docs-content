@@ -43,10 +43,11 @@
   * [Vote Proxy - Detailed Documentation](smart-contract-modules/proxy-module/vote-proxy-detailed-documentation.md)
   * [CDP Manager - Detailed Documentation](smart-contract-modules/proxy-module/cdp-manager-detailed-documentation.md)
   * [DSR Manager - Detailed Documentation](smart-contract-modules/proxy-module/dsr-manager-detailed-documentation.md)
-* [Emergency Shutdown Module](smart-contract-modules/emergency-shutdown-module.md)
 * [Maker Protocol Emergency Shutdown](smart-contract-modules/shutdown/README.md)
+  * [Emergency Shutdown for Partners](smart-contract-modules/shutdown/emergency-shutdown-for-partners.md)
   * [The Emergency Shutdown Process for Multi-Collateral Dai \(MCD\)](smart-contract-modules/shutdown/the-emergency-shutdown-process-for-multi-collateral-dai-mcd.md)
   * [End - Detailed Documentation](smart-contract-modules/shutdown/end-detailed-documentation.md)
+  * [ESM - Detailed Documentation](smart-contract-modules/shutdown/emergency-shutdown-module.md)
 
 ## Migration
 
