@@ -6,10 +6,10 @@ description: Adapters and Auction contracts for each specific collateral type
 
 * **Module Name:** Collateral Module
 * **Type/Category:** DSS —&gt; join.sol, flip.sol
-* \*\*\*\*[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
+* [**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
 * **Contract Sources:** 
-  * \*\*\*\*[**Join**](https://github.com/makerdao/dss/blob/master/src/join.sol)\*\*\*\*
-  * \*\*\*\*[**Flipper**](https://github.com/makerdao/dss/blob/master/src/flip.sol)\*\*\*\*
+  * [**Join**](https://github.com/makerdao/dss/blob/master/src/join.sol)
+  * [**Flipper**](https://github.com/makerdao/dss/blob/master/src/flip.sol)
 
 ## 1. Introduction \(Summary\)
 
@@ -26,8 +26,8 @@ The Collateral Module has 3 core components consisting of the `join`, and `flip`
 
 ### The Collateral Module is built up of the following components:
 
-1. \*\*\*\*[**Join Documentation**](https://docs.makerdao.com/smart-contract-modules/collateral-module/join-detailed-documentation)
-2. \*\*\*\*[**Flip Documentation \(LIQ 1.2\)**](https://docs.makerdao.com/smart-contract-modules/collateral-module/flipper-detailed-documentation)\*\*\*\*
+1. [**Join Documentation**](https://docs.makerdao.com/smart-contract-modules/collateral-module/join-detailed-documentation)
+2. [**Flip Documentation \(LIQ 1.2\)**](https://docs.makerdao.com/smart-contract-modules/collateral-module/flipper-detailed-documentation)
 
 ## 3. Key Mechanism and Concepts
 
