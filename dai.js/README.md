@@ -1,4 +1,11 @@
-# Dai.js
+---
+description: >-
+  Dai.js is the JavaScript library that helps developers easily build DeFi 
+  applications on top of the Maker Protocol, MakerDAO's platform of smart
+  contracts.
+---
+
+# The Dai Javascript Library of the Maker Protocol
 
 ## Introduction 
 

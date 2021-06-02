@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction to the Maker Protocol](README.md)
+* [MakerDAO Documentation](README.md)
 
 ## Getting Started
 
@@ -19,8 +19,9 @@
   * [Cat - Detailed Documentation](smart-contract-modules/core-module/cat-detailed-documentation.md)
   * [Vat - Detailed Documentation](smart-contract-modules/core-module/vat-detailed-documentation.md)
 * [Collateral Module](smart-contract-modules/collateral-module/README.md)
-  * [Flipper - Detailed Documentation](smart-contract-modules/collateral-module/flipper-detailed-documentation.md)
   * [Join - Detailed Documentation](smart-contract-modules/collateral-module/join-detailed-documentation.md)
+  * [Flipper - Detailed Documentation](smart-contract-modules/collateral-module/flipper-detailed-documentation.md)
+* [Liquidation 2.0 Module](smart-contract-modules/dog-and-clipper-detailed-documentation.md)
 * [Dai Module](smart-contract-modules/dai-module/README.md)
   * [Dai - Detailed Documentation](smart-contract-modules/dai-module/dai-detailed-documentation.md)
 * [System Stabilizer Module](smart-contract-modules/system-stabilizer-module/README.md)
@@ -84,7 +85,7 @@
 
 ---
 
-* [Dai.js](dai.js/README.md)
+* [The Dai Javascript Library of the Maker Protocol](dai.js/README.md)
   * [Getting started](dai.js/getting-started.md)
   * [Configuration](dai.js/maker/README.md)
     * [Plugins](dai.js/maker/plugins.md)
