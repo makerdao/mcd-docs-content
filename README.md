@@ -29,7 +29,7 @@ Additionally, there are a few other newly introduced features that come with the
 
 ## The Maker Protocol Smart Contract Modules System
 
-![The Maker Protocol System Diagram](.gitbook/assets/mcd-system-2.0%20%282%29.png)
+![The Maker Protocol System Diagram](.gitbook/assets/mcd-system-2.0%20%282%29%20%282%29.png)
 
 
 

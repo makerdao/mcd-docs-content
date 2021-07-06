@@ -72,7 +72,7 @@ Once the auction has begun, a fixed amount \(`lot`\) of DAI is put up for sale. 
 
 The surplus auction officially ends when the bid duration ends \(`ttl`\) without another bid getting placed **OR** when auction duration \(`tau`\) has been reached. At auction end, the MKR received for the surplus DAI is then sent to be burnt thereby contracting the overall MKR supply.
 
-![A diagram detailing the interactions a user has with Flapper and the Vow.](../../.gitbook/assets/flap_auction_interaction_.png)
+![A diagram detailing the interactions a user has with Flapper and the Vow.](../../.gitbook/assets/flap_auction_interaction_%20%281%29.png)
 
 ## 4. Gotchas \(Potential source of user error\)
 

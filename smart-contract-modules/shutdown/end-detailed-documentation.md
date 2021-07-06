@@ -14,7 +14,7 @@ description: Shutdown
 
 The `End`'s purpose is to coordinate Shutdown. In short, Shutdown closes down the system and reimburses Dai holders. This process can occur during upgrades \(Dai iterations\), as well as for security reasons in the event that implementation flaws arise in both in the code and in the design.
 
-![](../../.gitbook/assets/mcd-system-2.0.png)
+![](../../.gitbook/assets/mcd-system-2.0%20%282%29.png)
 
 ## 2. Contract Details
 

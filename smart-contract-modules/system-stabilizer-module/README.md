@@ -75,7 +75,7 @@ The purpose of the surplus auctions is to release Dai surplus from the `Vow` whi
 
 1. To mechanically reduce the MKR supply when auctioning off Dai surplus.
 
-![A diagram detailing the interactions a user has with Flapper and the Vow.](../../.gitbook/assets/flap_auction_interaction_%20%281%29.png)
+![A diagram detailing the interactions a user has with Flapper and the Vow.](../../.gitbook/assets/flap_auction_interaction_%20%281%29%20%281%29.png)
 
 ## 4. Gotchas \(Potential Sources of User Error\)
 

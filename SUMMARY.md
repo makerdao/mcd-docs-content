@@ -4,9 +4,7 @@
 
 ## Getting Started
 
----
-
-* [Maker Protocol 101](maker-protocol-101.md)
+* [Maker Protocol 101](getting-started/maker-protocol-101.md)
 
 ## Maker Developer Guides <a id="mcd-developer-guides"></a>
 
@@ -83,32 +81,30 @@
 
 ## Building on top of the Maker Protocol <a id="build"></a>
 
----
-
-* [The Dai Javascript Library of the Maker Protocol](dai.js/README.md)
-  * [Getting started](dai.js/getting-started.md)
-  * [Configuration](dai.js/maker/README.md)
-    * [Plugins](dai.js/maker/plugins.md)
-  * [Vault manager](dai.js/the-mcd-plugin.md)
-  * [Collateral types](dai.js/cdptypeservice.md)
-  * [Dai Savings Rate](dai.js/savingsservice.md)
-  * [Currency units](dai.js/currency-units.md)
-  * [System data](dai.js/systemdataservice.md)
-  * [Advanced](dai.js/advanced-configuration/README.md)
-    * [Transaction manager](dai.js/advanced-configuration/transactions.md)
-    * [DSProxy](dai.js/advanced-configuration/using-ds-proxy.md)
-    * [Events](dai.js/advanced-configuration/events.md)
-    * [Using multiple accounts](dai.js/advanced-configuration/using-multiple-accounts.md)
-    * [Adding a new service](dai.js/advanced-configuration/adding-a-new-service.md)
-  * [Single-Collateral Sai](dai.js/single-collateral-dai/README.md)
-    * [Collateralized Debt Position](dai.js/single-collateral-dai/collateralized-debt-position.md)
-    * [CDP Service](dai.js/single-collateral-dai/eth-cdp-service.md)
-    * [Price Service](dai.js/single-collateral-dai/price-service.md)
-    * [System Status](dai.js/single-collateral-dai/system-status.md)
-    * [Tokens](dai.js/single-collateral-dai/tokens.md)
-    * [Token Conversion](dai.js/single-collateral-dai/token-conversion.md)
-    * [Exchange Service](dai.js/single-collateral-dai/exchange-service.md)
-* [Pymaker](pymaker.md)
+* [The Dai Javascript Library of the Maker Protocol](build/dai.js/README.md)
+  * [Getting started](build/dai.js/getting-started.md)
+  * [Configuration](build/dai.js/maker/README.md)
+    * [Plugins](build/dai.js/maker/plugins.md)
+  * [Vault manager](build/dai.js/the-mcd-plugin.md)
+  * [Collateral types](build/dai.js/cdptypeservice.md)
+  * [Dai Savings Rate](build/dai.js/savingsservice.md)
+  * [Currency units](build/dai.js/currency-units.md)
+  * [System data](build/dai.js/systemdataservice.md)
+  * [Advanced](build/dai.js/advanced-configuration/README.md)
+    * [Transaction manager](build/dai.js/advanced-configuration/transactions.md)
+    * [DSProxy](build/dai.js/advanced-configuration/using-ds-proxy.md)
+    * [Events](build/dai.js/advanced-configuration/events.md)
+    * [Using multiple accounts](build/dai.js/advanced-configuration/using-multiple-accounts.md)
+    * [Adding a new service](build/dai.js/advanced-configuration/adding-a-new-service.md)
+  * [Single-Collateral Sai](build/dai.js/single-collateral-dai/README.md)
+    * [Collateralized Debt Position](build/dai.js/single-collateral-dai/collateralized-debt-position.md)
+    * [CDP Service](build/dai.js/single-collateral-dai/eth-cdp-service.md)
+    * [Price Service](build/dai.js/single-collateral-dai/price-service.md)
+    * [System Status](build/dai.js/single-collateral-dai/system-status.md)
+    * [Tokens](build/dai.js/single-collateral-dai/tokens.md)
+    * [Token Conversion](build/dai.js/single-collateral-dai/token-conversion.md)
+    * [Exchange Service](build/dai.js/single-collateral-dai/exchange-service.md)
+* [Pymaker](build/pymaker.md)
 
 ## MCD Security
 
