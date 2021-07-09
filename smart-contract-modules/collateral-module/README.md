@@ -5,11 +5,11 @@ description: Adapters and Auction contracts for each specific collateral type
 # Collateral Module
 
 * **Module Name:** Collateral Module
-* **Type/Category:** DSS —&gt; join.sol, flip.sol
+* **Type/Category:** DSS —&gt; join.sol, clip.sol
 * [**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
 * **Contract Sources:** 
   * [**Join**](https://github.com/makerdao/dss/blob/master/src/join.sol)
-  * [**Flipper**](https://github.com/makerdao/dss/blob/master/src/flip.sol)
+  * [**Clip**](https://github.com/makerdao/dss/blob/master/src/clip.sol)\*\*\*\*
 
 ## 1. Introduction \(Summary\)
 
@@ -27,7 +27,7 @@ The Collateral Module has 3 core components consisting of the `join`, and `flip`
 ### The Collateral Module is built up of the following components:
 
 1. [**Join Documentation**](https://docs.makerdao.com/smart-contract-modules/collateral-module/join-detailed-documentation)
-2. [**Flip Documentation \(LIQ 1.2\)**](https://docs.makerdao.com/smart-contract-modules/collateral-module/flipper-detailed-documentation)
+2. Clipper Contract - see ****[**Liquidation 2.0 Documentation**](https://docs.makerdao.com/smart-contract-modules/dog-and-clipper-detailed-documentation)\*\*\*\*
 
 ## 3. Key Mechanism and Concepts
 
@@ -41,14 +41,9 @@ The Collateral Module has 3 core components consisting of the `join`, and `flip`
 
   Each of the `join` contracts are specifically used for the given token type to be `join`'ed to the `vat`. Due to this fact, each `join` contract has slightly different logic to account for the different types of tokens within the system.
 
-* `Flipper`- collateral Auctions are used to sell collateral from Vaults that have become undercollateralized in order to preserve the collateralization of the system. The `cat` sends bitten collateral to the flip module to be auctioned off to Keepers.
-
-#### How exactly do the `Join` and `Flipper` contracts help the MCD system operate?
+#### How exactly do the `Join` contracts help the MCD system operate?
 
 * `Join` - the purpose of join adapters is to retain the security of the system, allowing only trusted smart contracts to add/remove value to/from the `Vat`. The location of collateral deposited/locked in Vaults is in the respective Join adapter.
-* `Flipper` - the purpose of collateral auctions is to decrease the market risk of collateral that is backing Dai. The main priorities of the Flipper are:
-  * To cover the amount of total debt \(minted Dai + accrued fees\) of the Vault.
-  * To return as much collateral back to the Vault owner as possible.
 
 ## 4. Gotchas \(Potential sources of user error\)
 

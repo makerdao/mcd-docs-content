@@ -6,22 +6,16 @@
 
 * [Maker Protocol 101](getting-started/maker-protocol-101.md)
 
-## Maker Developer Guides <a id="mcd-developer-guides"></a>
-
-* [Developer Guides and Tutorials](mcd-developer-guides/developer-guides-and-tutorials.md)
-
 ## Smart Contract Modules
 
-* [Core Module](smart-contract-modules/core-module/README.md)
-  * [Spot - Detailed Documentation](smart-contract-modules/core-module/spot-detailed-documentation.md)
-  * [Cat - Detailed Documentation](smart-contract-modules/core-module/cat-detailed-documentation.md)
-  * [Vat - Detailed Documentation](smart-contract-modules/core-module/vat-detailed-documentation.md)
-* [Collateral Module](smart-contract-modules/collateral-module/README.md)
-  * [Join - Detailed Documentation](smart-contract-modules/collateral-module/join-detailed-documentation.md)
-  * [Flipper - Detailed Documentation](smart-contract-modules/collateral-module/flipper-detailed-documentation.md)
-* [Liquidation 2.0 Module](smart-contract-modules/dog-and-clipper-detailed-documentation.md)
 * [Dai Module](smart-contract-modules/dai-module/README.md)
   * [Dai - Detailed Documentation](smart-contract-modules/dai-module/dai-detailed-documentation.md)
+* [Core Module](smart-contract-modules/core-module/README.md)
+  * [Vat - Detailed Documentation](smart-contract-modules/core-module/vat-detailed-documentation.md)
+  * [Spot - Detailed Documentation](smart-contract-modules/core-module/spot-detailed-documentation.md)
+* [Collateral Module](smart-contract-modules/collateral-module/README.md)
+  * [Join - Detailed Documentation](smart-contract-modules/collateral-module/join-detailed-documentation.md)
+* [Liquidation 2.0 Module](smart-contract-modules/dog-and-clipper-detailed-documentation.md)
 * [System Stabilizer Module](smart-contract-modules/system-stabilizer-module/README.md)
   * [Flapper - Detailed Documentation](smart-contract-modules/system-stabilizer-module/flap-detailed-documentation.md)
   * [Flopper - Detailed Documentation](smart-contract-modules/system-stabilizer-module/flop-detailed-documentation.md)
@@ -49,36 +43,18 @@
   * [End - Detailed Documentation](smart-contract-modules/shutdown/end-detailed-documentation.md)
   * [ESM - Detailed Documentation](smart-contract-modules/shutdown/emergency-shutdown-module.md)
 
-## Migration
-
-* [SCD &lt;&gt; MCD Migration](migration/scd-mcd-migration-detailed-documentation.md)
-* [Upgrading to Multi-Collateral Dai Guide](migration/upgrading-to-multi-collateral-dai-guide.md)
-
-## Other MCD Documentation <a id="other-documentation"></a>
+## Glossary <a id="other-documentation"></a>
 
 * [MCD Glossaries](other-documentation/system-glossary.md)
 * [Smart Contract Annotations](other-documentation/smart-contract-annotations.md)
 
-## Auctions
+## MCD Changelog
 
-* [The Auctions of the Maker Protocol](auctions/the-auctions-of-the-maker-protocol.md)
+* [Multi-Collateral DAI Public Releases](mcd-changelog/multi-collateral-dai-public-releases.md)
 
-## Keepers
+## MCD Security
 
-* [Auction Keepers](keepers/auction-keepers/README.md)
-  * [Auction Keeper Bot Setup Guide](keepers/auction-keepers/auction-keeper-bot-setup-guide.md)
-* [Market Maker Keepers](keepers/market-maker-keepers/README.md)
-  * [Market Maker Keeper Bot Setup Guide](keepers/market-maker-keepers/market-maker-keeper-bot-setup-guide.md)
-* [Cage Keeper](keepers/cage-keeper.md)
-* [Simple Arbitrage Keeper](keepers/simple-arbitrage-keeper.md)
-* [Chief Keeper](keepers/chief-keeper.md)
-
-## Command-line Interfaces <a id="clis"></a>
-
-* [Seth](clis/seth.md)
-* [Multi Collateral Dai \(MCD\) CLI](clis/mcd-cli.md)
-* [Dai and Collateral Redemption during Emergency Shutdown](clis/dai-and-collateral-redemption-during-emergency-shutdown.md)
-* [Emergency Shutdown \(ES\) CLI](clis/emergency-shutdown-es-cli.md)
+* [Security for the Maker Protocol](mcd-security/security.makerdao.com.md)
 
 ## Building on top of the Maker Protocol <a id="build"></a>
 
@@ -106,12 +82,31 @@
     * [Token Conversion](build/dai.js/single-collateral-dai/token-conversion.md)
     * [Exchange Service](build/dai.js/single-collateral-dai/exchange-service.md)
 * [Pymaker](build/pymaker.md)
+* [Developer Guides and Tutorials](build/developer-guides-and-tutorials.md)
 
-## MCD Security
+## Keepers
 
-* [Security for the Maker Protocol](mcd-security/security.makerdao.com.md)
+* [The Auctions of the Maker Protocol](keepers/the-auctions-of-the-maker-protocol.md)
+* [Auction Keepers](keepers/auction-keepers/README.md)
+  * [Auction Keeper Bot Setup Guide](keepers/auction-keepers/auction-keeper-bot-setup-guide.md)
+* [Market Maker Keepers](keepers/market-maker-keepers/README.md)
+  * [Market Maker Keeper Bot Setup Guide](keepers/market-maker-keepers/market-maker-keeper-bot-setup-guide.md)
+* [Cage Keeper](keepers/cage-keeper.md)
+* [Simple Arbitrage Keeper](keepers/simple-arbitrage-keeper.md)
+* [Chief Keeper](keepers/chief-keeper.md)
 
-## MCD Changelog
+## Command-line Interfaces <a id="clis"></a>
 
-* [Multi-Collateral DAI Public Releases](mcd-changelog/multi-collateral-dai-public-releases.md)
+* [Seth](clis/seth.md)
+* [Multi Collateral Dai \(MCD\) CLI](clis/mcd-cli.md)
+* [Dai and Collateral Redemption during Emergency Shutdown](clis/dai-and-collateral-redemption-during-emergency-shutdown.md)
+* [Emergency Shutdown \(ES\) CLI](clis/emergency-shutdown-es-cli.md)
+
+## Miscellaneous
+
+* [Liquidations 1.2 System \(Deprecated\)](miscellaneous/liquidations-1.2-system-deprecated/README.md)
+  * [Cat - Detailed Documentation](miscellaneous/liquidations-1.2-system-deprecated/cat-detailed-documentation.md)
+  * [Flipper - Detailed Documentation](miscellaneous/liquidations-1.2-system-deprecated/flipper-detailed-documentation.md)
+* [SCD &lt;&gt; MCD Migration](miscellaneous/scd-mcd-migration-detailed-documentation.md)
+* [Upgrading to Multi-Collateral Dai Guide](miscellaneous/upgrading-to-multi-collateral-dai-guide.md)
 
