@@ -6,20 +6,21 @@ description: Electing a Chief contract via an approval voting system
 
 * **Contract Name:** chief.sol
 * **Type/Category:** Governance Module
-* \*\*\*\*[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki#system-architecture)
-* \*\*\*\*[**Contract Source**](https://github.com/dapphub/ds-chief/blob/master/src/chief.sol)
+* ****[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki#system-architecture)
+* ****[**Contract Source**](https://github.com/dapphub/ds-chief/blob/master/src/chief.sol)
+* ****[**Etherscan**](https://etherscan.io/address/0x0a3f6849f78076aefaDf113F5BED87720274dDC0#code)****
 
-## 1. Introduction \(Summary\)
+## 1. Introduction (Summary)
 
 The `Ds-Chief` smart contract provides a method to elect a "chief" contract via an approval voting system. This may be combined with another contract, such as `DSAuthority`, to elect a ruleset for a smart contract system.
 
-In short, voters will lock up their voting tokens in order to give their votes some weight in the system. The voting is then done by continuous [approval voting](https://en.wikipedia.org/wiki/Approval_voting), where users receive IOU tokens when they lock their voting tokens up, which is useful for secondary governance mechanisms. The IOU tokens may not be exchanged for the locked tokens except by individuals who have actually locked funds in the contract itself, and only up to the amount they have locked.
+In short, voters will lock up their voting tokens in order to give their votes some weight in the system. The voting is then done by continuous [approval voting](https://en.wikipedia.org/wiki/Approval\_voting), where users receive IOU tokens when they lock their voting tokens up, which is useful for secondary governance mechanisms. The IOU tokens may not be exchanged for the locked tokens except by individuals who have actually locked funds in the contract itself, and only up to the amount they have locked.
 
 ![Governance contract interactions with the system](../../.gitbook/assets/pause.png)
 
 ## 2. Contract Details
 
-### Glossary \(Chief\)
+### Glossary (Chief)
 
 `**DSChiefApprovals` provides the following public properties:\*\*
 
@@ -43,7 +44,7 @@ Most of the functions are decorated with the the `note` modifier from [ds-note](
 1. DSChiefApprovals
 2. DSChief, which inherits from DSChiefApprovals.
 
-#### Key Functionalities \(as defined in the smart contract\)
+#### Key Functionalities (as defined in the smart contract)
 
 #### DSChiefApprovals
 
@@ -77,7 +78,7 @@ Most of the functions are decorated with the the `note` modifier from [ds-note](
 
 #### DSChief
 
-`DSChief` is a combination of `DSRoles` from the `ds-roles` package and `DSChiefApprovals`. It can be used in conjunction with `ds-auth` \(as an authority object\) to govern smart contract systems.
+`DSChief` is a combination of `DSRoles` from the `ds-roles` package and `DSChiefApprovals`. It can be used in conjunction with `ds-auth` (as an authority object) to govern smart contract systems.
 
 #### Public Functions
 
@@ -105,7 +106,7 @@ Most of the functions are decorated with the the `note` modifier from [ds-note](
 
 See [ds-roles](https://dapp.tools/dappsys/ds-roles.html) for inherited features.
 
-## 4. Gotchas \(Potential source of user error\)
+## 4. Gotchas (Potential source of user error)
 
 In general, when we refer to the **"hat"**, it can be any address — be it a single-use contract like ds-spell, a multi-use contract or an individual's wallet. Thus, ds-chief can work well as a method for selecting code for execution just as well as it can for realizing political processes.
 
@@ -119,7 +120,7 @@ The purpose of the IOU token is to allow for the chaining of governance contract
 
 **Example:**
 
-Let’s say there are three `DSChief` contracts \(chiefA, chiefB, and chiefC\) and a `chiefA.GOV` that is the MKR token. If we set `chiefB.GOV` to `chiefA.IOU` and `chiefC.GOV` to `chiefB.IOU`, this allows all three contracts to run using a common group of MKR.
+Let’s say there are three `DSChief` contracts (chiefA, chiefB, and chiefC) and a `chiefA.GOV` that is the MKR token. If we set `chiefB.GOV` to `chiefA.IOU` and `chiefC.GOV` to `chiefB.IOU`, this allows all three contracts to run using a common group of MKR.
 
 #### **Approval Voting**
 
@@ -129,13 +130,13 @@ In addition, the `ds-chief` weighs votes according to the quantity of a voting t
 
 #### Implementations
 
-If you are writing a front-end UI for this smart contract, please note that the address\[\] parameters that are passed to the `etch` and `vote` functions must be byte-ordered sets.
+If you are writing a front-end UI for this smart contract, please note that the address\[] parameters that are passed to the `etch` and `vote` functions must be byte-ordered sets.
 
 **Example:**
 
 Using `[0x0, 0x1, 0x2, ...]` is valid but using `[0x1, 0x0, ...]` and `[0x0, 0x0, 0x1, ...]` is not. This ordering constraint allows the contract to cheaply ensure voters cannot multiply their weights by listing the same candidate on their slate multiple times.
 
-## 5. Failure Modes \(Bounds on Operating Conditions & External Risk Factors\)
+## 5. Failure Modes (Bounds on Operating Conditions & External Risk Factors)
 
 * **MKR users moving their votes from one spell to another**
   * One of the biggest potential failure modes occurs when people are moving their votes from one spell to another. This opens up a gap/period of time when only a small amount of MKR is needed to lift a random hat.
@@ -145,4 +146,3 @@ Using `[0x0, 0x1, 0x2, ...]` is valid but using `[0x1, 0x0, ...]` and `[0x0, 0x0
   * Due to the continuous nature of voting, a spell will remain live in the system even if it was not approved to be the governing proposal. This means that MKR holders can continue to vote on the candidate and in times of lower voter participation there is potential for them to introduce a failure mode by voting for an unexpected and/or older candidate. This illustrates why increased voter participation is important and that a higher amount of MKR on the current governing proposal adds to the stability of the system.
 * **Unsafe states when migrating to a new chief contract**
   * When migrating to a new chief, authority must be transferred to the new contract and revoked from the old. This poses a small coordination problem as the new contract must already have enough MKR on its `hat` to be safe against governance attacks while the voters enacting the change itself must have enough MKR in the old chief to pass the proposal.
-
