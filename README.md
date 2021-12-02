@@ -34,7 +34,6 @@ Additionally, there are a few other newly introduced features that come with the
 ## More MakerDAO Documentation
 
 * [Introductory](https://makerdao.world/en/) @ MakerDAO.world
-* [Governance](https://manual.makerdao.com) @ manual.makerdao.com&#x20;
 * [Technical](https://docs.makerdao.com) @ docs.makerdao.com **<-- You are here**
 * [Collateral Onboarding](https://collateral.makerdao.com) @ collateral.makerdao.com
 * [MIPs Portal](https://mips.makerdao.com) @ mips.makerdao.com
