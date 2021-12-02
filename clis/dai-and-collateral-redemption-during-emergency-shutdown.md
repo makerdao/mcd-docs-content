@@ -29,19 +29,18 @@ To redeem Dai and/or excess collateral in the event of Emergency Shutdown
 6. Using cashETH
 7. Define calldata for our function
 8. Execute cashETHcalldata
-9. Alternative from step \(6\), Using cashGEM
+9. Alternative from step (6), Using cashGEM
 10. Define calldata for our function
 11. Call execute in MYPROXY
 
 **Vault Owners to Redeem Excess Collateral**
 
 1. Vault Holder State
-2. Redeeming ETH using the freeETH function
+2.  Redeeming ETH using the freeETH function
 
-   2.1. Set Call Data
+    2.1. Set Call Data
 
-   2.2 Execute this calldata
-
+    2.2 Execute this calldata
 3. Redeeming ETH using the freeGEM function
 
 3.1 Set Calldata
@@ -54,13 +53,13 @@ To redeem Dai and/or excess collateral in the event of Emergency Shutdown
 
 #### **1. Installation**
 
-In order to interface with the Ethereum blockchain, the user needs to install seth, a command line tool as part of the [Dapp.Tools](https://dapp.tools/) toolset. We also provide further [installation information here](https://github.com/makerdao/developerguides/blob/master/devtools/seth/seth-guide-01/seth-guide-01.md). Once the user has installed and configured **`[seth](<https://dapp.tools/>)`** correctly to use the main Ethereum network and the address which holds their MKR, they can query contract balances, approvals and transfers.
+In order to interface with the Ethereum blockchain, the user needs to install seth, a command line tool as part of the [Dapp.Tools](https://dapp.tools) toolset. We also provide further [installation information here](https://github.com/makerdao/developerguides/blob/master/devtools/seth/seth-guide-01/seth-guide-01.md). Once the user has installed and configured **`[seth](<https://dapp.tools/>)`** correctly to use the main Ethereum network and the address which holds their MKR, they can query contract balances, approvals and transfers.
 
 #### **2. Contract Address Setup**
 
-The user will require the following contract addresses, shown below as mainnet addresses. Rest of mainnet or testnet addresses are accessible at [changelog.makerdao.com](https://changelog.makerdao.com/) which can be verified on [Etherscan](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2). Similarly, additional information on the commands described below can be found in the [End contract](https://github.com/makerdao/dss/blob/master/src/end.sol) and the [Proxy\_Actions\_End contract](https://github.com/makerdao/dss-proxy-actions/blob/master/src/DssProxyActions.sol#L793). These should be setup in the following manner and pasted into the terminal line by line:
+The user will require the following contract addresses, shown below as mainnet addresses. Rest of mainnet or testnet addresses are accessible at [changelog.makerdao.com](https://changelog.makerdao.com) which can be verified on [Etherscan](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2). Similarly, additional information on the commands described below can be found in the [End contract](https://github.com/makerdao/dss/blob/master/src/end.sol) and the [Proxy\_Actions\_End contract](https://github.com/makerdao/dss-proxy-actions/blob/master/src/DssProxyActions.sol#L793). These should be setup in the following manner and pasted into the terminal line by line:
 
-```text
+```
 export DAI=0x6B175474E89094C44Da98b954EedeAC495271d0F
 export PROXY_ACTIONS_END=0x069B2fb501b6F16D1F5fE245B16F6993808f1008
 export MCD_END=0xaB14d3CE3F733CACB76eC2AbE7d2fcb00c99F3d5
@@ -93,7 +92,7 @@ There are two functions to be called in order to retrieve the end collateral. Th
 
 Depositing Dai tokens into the system can be done using the `PROXY_ACTIONS_END` contract library and the `pack` function. This function efficiently bundles together three parameters, including three parameters; the `Dai(join)` adapter, the `end` contract and the amount of Dai tokens you wish to redeem for allowed collateral in one go.
 
-```text
+```
 function pack(
         address daiJoin,
         address end,
@@ -113,7 +112,7 @@ function pack(
 
 The user can check their Dai Token balance and subsequently save it in the `wad` variable so that it can be later used in the proxy function.
 
-```text
+```
 export balance=$(seth --from-wei $(seth --to-dec $(seth call $DAI 'balanceOf(address)' $ETH_FROM)))
 export wad=$(seth --to-uint256 $(seth --to-wei 13400 eth))
 # in the above, 13400 is an example Dai balance
@@ -123,7 +122,7 @@ export wad=$(seth --to-uint256 $(seth --to-wei 13400 eth))
 
 The user needs to approve `MYPROXY` in order to withdraw Dai from their wallet by using the following function.
 
-```text
+```
 seth send $DAI 'approve(address,uint)' $MYPROXY $(seth --to-uint256 $(mcd --to-hex -1))
 ```
 
@@ -131,7 +130,7 @@ seth send $DAI 'approve(address,uint)' $MYPROXY $(seth --to-uint256 $(mcd --to-h
 
 Next it is necessary to bundle together the function definitions and parameters that the user needs to execute. This is done by preparing a function call to `MYPROXY`, defined as `calldata.`
 
-```text
+```
 export calldata=$(seth calldata 'pack(address,address,uint)' $MCD_JOIN_DAI $MCD_END $wad)
 .
 .
@@ -143,20 +142,20 @@ export calldata=$(seth calldata 'pack(address,address,uint)' $MCD_JOIN_DAI $MCD_
 
 The user is able to call the `execute` function and utilize the `PROXY_ACTIONS_END.pack()` function within the environment of `MYPROXY`. This approves the proxy to take Dai tokens from the user's wallet into the proxy address and deposits it into the `end` contract, where a proportionate amount of collateral can later be claimed. Once the DAI is packed, it cannot be unpacked.
 
-```text
+```
 seth send $MYPROXY 'execute(address,bytes memory)' $PROXY_ACTIONS_END $calldata
 # [example](<http://ethtx.info/kovan/0x8f4021e46b1a6889ee7045ba3f3fae69dee7ef130dbb447d4cc724771e04bcd6>) transaction showing actions involved in 'packing' the user's Dai.
 ```
 
 #### 5. Call `cashETH` or `cashGEM` functions
 
-Users will be able to withdraw collateral depending on the collateral that is in the VAT at the time of shutdown. For example 1 Dai will be able to claim a portion of ETH and BAT \(and any other accepted collateral\) which when combined will be approximately worth 1 USD. This process is completed by calling `cashETH` or `cashGEM`.
+Users will be able to withdraw collateral depending on the collateral that is in the VAT at the time of shutdown. For example 1 Dai will be able to claim a portion of ETH and BAT (and any other accepted collateral) which when combined will be approximately worth 1 USD. This process is completed by calling `cashETH` or `cashGEM`.
 
 #### 6. **Using `cashETH`**
 
-The following function `cashETH` is referenced as part of the `calldata` function and should be referenced [here](https:).
+The following function `cashETH` is referenced as part of the `calldata` function and should be referenced [here](https://app.gitbook.com/s/-LtJ1VeNJVW-jiKH0xoL/clis/dai-and-collateral-redemption-during-emergency-shutdown).
 
-```text
+```
 function cashETH(
         address ethJoin,
         address end,
@@ -178,7 +177,7 @@ function cashETH(
 
 Next, we again define the calldata for our function by bundling together the `cashETH` parameters shown above.
 
-```text
+```
 export cashETHcalldata=$(seth calldata 'cashETH(address,address,bytes32,uint)' $MCD_JOIN_ETH $MCD_END $ilk $wad)
 ```
 
@@ -186,16 +185,16 @@ export cashETHcalldata=$(seth calldata 'cashETH(address,address,bytes32,uint)' $
 
 Finally, executing the `cashETHcalldata` in the `execute` function of the user's `MYPROXY` contract will redeem ETH for DAI, and place this ETH into the user's ETH wallet.
 
-```text
+```
 seth send $MYPROXY 'execute(address,bytes memory)' $PROXY_ACTIONS_END $cashETHcalldata
 # [example](<http://ethtx.info/kovan/0x323ab9cd9817695089aea31eab369fa9f3c9b1a64743ed4c5c1b3ec4d7218cf8>) successful transaction
 ```
 
-#### 9. Alternative from step \(6\), Using **`cashGEM`**
+#### 9. Alternative from step (6), Using **`cashGEM`**
 
 It is also possible to use the `cashGEM` function in order to redeem different collateral types. In the below example we are referencing gemJoin as it relates to BAT.
 
-```text
+```
 function cashGem(
         address gemJoin,
         address end,
@@ -210,9 +209,9 @@ function cashGem(
 
 #### 10. Define calldata for our function
 
-Similarly, as done in step \(7\), the user needs to define the calldata to interact with `cashGEM`
+Similarly, as done in step (7), the user needs to define the calldata to interact with `cashGEM`
 
-```text
+```
 export cashBATcalldata=$(seth calldata 'cashETH(address,address,bytes32,uint)' $MCD_JOIN_BAT $MCD_END $ilkBAT $wad)
 ```
 
@@ -220,7 +219,7 @@ export cashBATcalldata=$(seth calldata 'cashETH(address,address,bytes32,uint)' $
 
 Finally, executing the `cashBATcalldata` in the `execute` function of the user's `MYPROXY` contract will redeem BAT for DAI, and place this BAT into the user's ETH wallet.
 
-```text
+```
 seth send $MYPROXY 'execute(address,bytes memory)' $PROXY_ACTIONS_END $cashBATcalldata
 ```
 
@@ -236,7 +235,7 @@ Similarly, these functions have been completed using Maker proxy contract calls.
 
 ### 2. Redeeming ETH using the `freeETH` function
 
-```text
+```
 function freeETH(
         address manager,
         address ethJoin,
@@ -257,7 +256,7 @@ function freeETH(
 
 Depending on how many vaults the user has, it will be necessary to repeat this process for each vault ID.
 
-```text
+```
 export freeETHcalldata=$(seth calldata 'freeETH(address,address,address,uint)' $CDP_MANAGER $MCD_JOIN_ETH $MCD_END $cdpId )
 ```
 
@@ -265,13 +264,13 @@ export freeETHcalldata=$(seth calldata 'freeETH(address,address,address,uint)' $
 
 Executing the `MYPROXY` contract will redeem ETH and place it into the users address.
 
-```text
+```
 seth send $MYPROXY 'execute(address,bytes memory)' $PROXY_ACTIONS_END $freeETHcalldata
 ```
 
 ### 3. Redeeming ETH using the `freeGEM` function
 
-```text
+```
 function freeGem(
         address manager,
         address gemJoin,
@@ -288,15 +287,15 @@ function freeGem(
 
 Depending on how many vaults the user has, it will be necessary to repeat this process for each vault ID.
 
-```text
+```
 export freeBATcalldata=$(seth calldata 'freeETH(address,address,address,uint)' $CDP_MANAGER $MCD_JOIN_BAT $MCD_END $cdpId )
 ```
 
 #### 3.2. Execute this calldata
 
-Executing the `MYPROXY` contract will redeem BAT \(or other collateral types\) and place them into the users address.
+Executing the `MYPROXY` contract will redeem BAT (or other collateral types) and place them into the users address.
 
-```text
+```
 seth send $MYPROXY 'execute(address,bytes memory)' $PROXY_ACTIONS_END $freeBATcalldata
 ```
 
@@ -307,4 +306,3 @@ The above outlines how to redeem Dai and excess Vault collateral using the comma
 In summary, we showed how to check your Dai holdings, how to approve a proxy to withdraw Dai from your wallet and then to use `cashETH/GEM` functions to withdraw collateral into the user’s ETH wallet using the `MYPROXY` contract . For Vault owners, we showed how to redeem collateral by using the `MYPROXY` contract and the `freeGEM` function.
 
 In the event of emergency shutdown we envision that it will still be possible to sell Dai on the open market as well as by making use of economically incentivized redemption keepers to meet market needs for both Dai owners and Vaults holders.
-

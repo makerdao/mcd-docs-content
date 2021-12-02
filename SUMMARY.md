@@ -1,6 +1,6 @@
 # Table of contents
 
-* [MakerDAO Documentation](README.md)
+* [Maker Protocol Documentation](README.md)
 
 ## Getting Started
 
@@ -21,7 +21,7 @@
   * [Flopper - Detailed Documentation](smart-contract-modules/system-stabilizer-module/flop-detailed-documentation.md)
   * [Vow - Detailed Documentation](smart-contract-modules/system-stabilizer-module/vow-detailed-documentation.md)
 * [Oracle Module](smart-contract-modules/oracle-module/README.md)
-  * [Oracle Security Module \(OSM\) - Detailed Documentation](smart-contract-modules/oracle-module/oracle-security-module-osm-detailed-documentation.md)
+  * [Oracle Security Module (OSM) - Detailed Documentation](smart-contract-modules/oracle-module/oracle-security-module-osm-detailed-documentation.md)
   * [Median - Detailed Documentation](smart-contract-modules/oracle-module/median-detailed-documentation.md)
 * [MKR Module](smart-contract-modules/mkr-module.md)
 * [Governance Module](smart-contract-modules/governance-module/README.md)
@@ -39,11 +39,11 @@
 * [Flash Mint Module](smart-contract-modules/flash-mint-module.md)
 * [Maker Protocol Emergency Shutdown](smart-contract-modules/shutdown/README.md)
   * [Emergency Shutdown for Partners](smart-contract-modules/shutdown/emergency-shutdown-for-partners.md)
-  * [The Emergency Shutdown Process for Multi-Collateral Dai \(MCD\)](smart-contract-modules/shutdown/the-emergency-shutdown-process-for-multi-collateral-dai-mcd.md)
+  * [The Emergency Shutdown Process for Multi-Collateral Dai (MCD)](smart-contract-modules/shutdown/the-emergency-shutdown-process-for-multi-collateral-dai-mcd.md)
   * [End - Detailed Documentation](smart-contract-modules/shutdown/end-detailed-documentation.md)
   * [ESM - Detailed Documentation](smart-contract-modules/shutdown/emergency-shutdown-module.md)
 
-## Glossary <a id="other-documentation"></a>
+## Glossary <a href="#other-documentation" id="other-documentation"></a>
 
 * [MCD Glossaries](other-documentation/system-glossary.md)
 * [Smart Contract Annotations](other-documentation/smart-contract-annotations.md)
@@ -56,7 +56,7 @@
 
 * [Security for the Maker Protocol](mcd-security/security.makerdao.com.md)
 
-## Building on top of the Maker Protocol <a id="build"></a>
+## Building on top of the Maker Protocol <a href="#build" id="build"></a>
 
 * [The Dai Javascript Library of the Maker Protocol](build/dai.js/README.md)
   * [Getting started](build/dai.js/getting-started.md)
@@ -95,18 +95,17 @@
 * [Simple Arbitrage Keeper](keepers/simple-arbitrage-keeper.md)
 * [Chief Keeper](keepers/chief-keeper.md)
 
-## Command-line Interfaces <a id="clis"></a>
+## Command-line Interfaces <a href="#clis" id="clis"></a>
 
 * [Seth](clis/seth.md)
-* [Multi Collateral Dai \(MCD\) CLI](clis/mcd-cli.md)
+* [Multi Collateral Dai (MCD) CLI](clis/mcd-cli.md)
 * [Dai and Collateral Redemption during Emergency Shutdown](clis/dai-and-collateral-redemption-during-emergency-shutdown.md)
-* [Emergency Shutdown \(ES\) CLI](clis/emergency-shutdown-es-cli.md)
+* [Emergency Shutdown (ES) CLI](clis/emergency-shutdown-es-cli.md)
 
 ## Miscellaneous
 
-* [Liquidations 1.2 System \(Deprecated\)](miscellaneous/liquidations-1.2-system-deprecated/README.md)
+* [Liquidations 1.2 System (Deprecated)](miscellaneous/liquidations-1.2-system-deprecated/README.md)
   * [Cat - Detailed Documentation](miscellaneous/liquidations-1.2-system-deprecated/cat-detailed-documentation.md)
   * [Flipper - Detailed Documentation](miscellaneous/liquidations-1.2-system-deprecated/flipper-detailed-documentation.md)
-* [SCD &lt;&gt; MCD Migration](miscellaneous/scd-mcd-migration-detailed-documentation.md)
+* [SCD <> MCD Migration](miscellaneous/scd-mcd-migration-detailed-documentation.md)
 * [Upgrading to Multi-Collateral Dai Guide](miscellaneous/upgrading-to-multi-collateral-dai-guide.md)
-

@@ -4,7 +4,7 @@ description: >-
   the Dai stablecoin against crypto collateral assets. Learn how it works.
 ---
 
-# MakerDAO Documentation
+# Maker Protocol Documentation
 
 ## Introduction&#x20;
 
@@ -29,7 +29,7 @@ Additionally, there are a few other newly introduced features that come with the
 
 ## The Maker Protocol Smart Contract Modules System
 
-![The Maker Protocol System Diagram](<.gitbook/assets/mcd-system-2.0 (2) (2).png>)
+![The Maker Protocol System Diagram](<.gitbook/assets/MCD System 2.1.png>)
 
 ## More MakerDAO Documentation
 
