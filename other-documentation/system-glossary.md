@@ -6,7 +6,7 @@ description: >-
 
 # MCD Glossaries
 
-## 1. [MCD General Glossary of Terms](https://community-development.makerdao.com/makerdao-mcd-faqs/faqs/glossary)
+## 1. [MCD General Glossary of Terms](https://makerdao.world/en/learn/Glossary/)
 
 ## ​2. MCD Core Smart Contracts Glossary:
 
