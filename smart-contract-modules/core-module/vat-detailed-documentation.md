@@ -14,7 +14,7 @@ description: The Maker Protocol's Core Accounting System
 
 The `Vat` is the core Vault engine of `dss`. It stores Vaults and tracks all the associated Dai and Collateral balances. It also defines the rules by which Vaults and balances can be manipulated. The rules defined in the `Vat` are immutable, so in some sense, the rules in the `Vat` can be viewed as the constitution of `dss`.
 
-![](<../../.gitbook/assets/MCD System 2.0.png>)
+![](<../../.gitbook/assets/MCD System 2.1.png>)
 
 ## 2. Contract Details
 
