@@ -64,17 +64,17 @@ Each individual Vault (represented by an `Urn` struct in the Vat) stores a "norm
 
 Suppose at time 0, a Vault is opened and 20 Dai is drawn from it. Assume that `rate` is 1; this implies that the stored `art` in the Vault's `Urn` is also 20. Let the `base` and `duty` be set such that after 12 years, `art*rate` = 30 (this corresponds to an annual stability of roughly 3.4366%). Equivalently, `rate` = 1.5 after 12 years. Assuming that `base + duty` does not change, the growth of the effective debt can be graphed as follows:
 
-![](../../.gitbook/assets/debt\_initial.png)
+![](../../.gitbook/assets/Debt\_initial.png)
 
 Now suppose that at 12 years, an additional 10 Dai is drawn. The debt vs time graph would change to look like:
 
-![](../../.gitbook/assets/debt\_second\_draw.png)
+![](../../.gitbook/assets/Debt\_second\_draw.png)
 
 What `art` would be stored in the Vat to reflect this change? (hint: _not_ 30!) Recall that `art` is defined from the requirement that `art * rate` = Vault debt. Since the Vault's debt is known to be 40 and `rate` is known to be 1.5, we can solve for `art`: 40/1.5 \~ 26.67.
 
 The `art` can be thought of as "debt at time 0", or "the amount of Dai that if drawn at time zero would result in the present total debt". The graph below demonstrates this visually; the length of the green bar extending upwards from t = 0 is the post-draw `art` value.
 
-![](../../.gitbook/assets/debt\_projected.png)
+![](../../.gitbook/assets/Debt\_projected.png)
 
 Some consequences of the mechanism that are good to keep in mind:
 
@@ -92,7 +92,7 @@ The system relies on market participants to call `drip` rather than, say, automa
 
 Despite the variety of incentivized actors, calls to `drip` are likely to be intermittent due to gas costs and tragedy of the commons until a certain scale can be achieved. Thus the value of the `rate` parameter for a given collateral type may display the following time behavior:
 
-![](../../.gitbook/assets/intermittent\_drip.png)
+![](../../.gitbook/assets/Intermittent\_Drip.png)
 
 Debt drawn and wiped between `rate` updates (i.e. between `drip` calls) would have no stability fees assessed on it. Also, depending on the timing of updates to the stability fee, there may be small discrepancies between the actual value of `rate` and its ideal value (the value if `drip` were called in every block). To demonstrate this, consider the following:
 
@@ -134,7 +134,7 @@ Depending on whether _f_ > _g_ or _g_ > _f_, the net value of fees accrued will 
 
 DSR accumulation is very similar to stability fee accumulation. It is implemented via the [Pot](https://docs.makerdao.com/smart-contract-modules/rates-module/pot-detailed-documentation), which interacts with the Vat (and again the Vow's address is used for accounting for the Dai created). The Pot tracks normalized deposits on a per-user basis (`pie[usr]`) and maintains a cumulative interest rate parameter (`chi`). A `drip` function analogous to that of Jug is called intermittently by economic actors to trigger savings accumulation.
 
-![](../../.gitbook/assets/blank\_diagram\_-3-.png)
+![](../../.gitbook/assets/Blank\_Diagram\_\(3\).png)
 
 The per-second (or "instantaneous") savings rate is stored in the `dsr` parameter (analogous to `base+duty` in the stability fee case). The `chi` parameter as a function of time is thus (in the ideal case of `drip` being called every block) given by:
 

@@ -6,37 +6,37 @@ description: The MKR Governance Token Implementation
 
 * **Contract Name:** token.sol
 * **Type/Category:** MKR Module
-* \*\*\*\*[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki#system-architecture)
-* \*\*\*\*[**Contract Source**](https://github.com/dapphub/ds-token/blob/master/src/token.sol)
-* \*\*\*\*[**Etherscan**](https://etherscan.io/address/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2)
+* ****[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki#system-architecture)
+* ****[**Contract Source**](https://github.com/dapphub/ds-token/blob/master/src/token.sol)
+* ****[**Etherscan**](https://etherscan.io/address/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2)
 
-## 1. Introduction \(Summary\)
+## 1. Introduction (Summary)
 
 The MKR Module contains the MKR token, which is a deployed [Ds-Token](https://github.com/dapphub/ds-token) contract. It is an ERC20 token that provides a standard ERC20 token interface. It also contains logic for burning and authorized minting of MKR.
 
-![MKR Interactions with the Maker Protocol](../.gitbook/assets/screen-shot-2019-11-17-at-2.10.06-pm.png)
+![MKR Interactions with the Maker Protocol](<../.gitbook/assets/Screen Shot 2019-11-17 at 2.10.06 PM.png>)
 
 ## 2. Contract Details:
 
-### Glossary \(MKR\)
+### Glossary (MKR)
 
 * `guy` - user address
 * `wad` - a quantity of tokens, usually as a fixed point integer with 10^18 decimal places.
 * `dst` - refers to the destination address.
 
-### Key Functionalities \(as defined in the smart contract\)
+### Key Functionalities (as defined in the smart contract)
 
-`mint` - credit tokens at an address whilst simultaneously increasing totalSupply \(requires auth\).
+`mint` - credit tokens at an address whilst simultaneously increasing totalSupply (requires auth).
 
-`burn` - debit tokens at an address whilst simultaneously decreasing totalSupply \(requires auth\).
+`burn` - debit tokens at an address whilst simultaneously decreasing totalSupply (requires auth).
 
-#### **Aliases** 
+#### **Aliases**&#x20;
 
 `push` - transfer an amount from msg.sender to a given address.
 
-`pull` - transfer an amount from a given address to msg.sender \(requires trust or approval\).
+`pull` - transfer an amount from a given address to msg.sender (requires trust or approval).
 
-`move` - transfer an amount from a given src address to a given dst address \(requires trust or approval\).
+`move` - transfer an amount from a given src address to a given dst address (requires trust or approval).
 
 **Standard ERC-20**
 
@@ -66,17 +66,16 @@ Further information about the ERC20 Token standard can be found [here](https://e
 
 Along with MKR having a standard ERC20 token interface, it also has the addition of DSAuth-protected mint and burn functions; binary approval via MAX\_UINT; as well as a push, pull and move aliases for transferFrom operations.
 
-**The MKR token has 3 methods of use within the Maker Protocol \(reference** [**Maker Protocol 101 Presentation**](https://docs.makerdao.com/maker-protocol-101)**\):**
+**The MKR token has 3 methods of use within the Maker Protocol (reference** [**Maker Protocol 101 Presentation**](https://docs.makerdao.com/maker-protocol-101)**):**
 
 * **As a utility token:** As Dai stability fees earned on Vaults accrue within the Maker Protocol, MKR holders can use MKR to vote to enable the Flapper auction house to sell Dai surplus for MKR. Once the auction is complete the Maker protocol burns the MKR.
 * **As a governance token:** MKR is used by MKR holders to vote for the risk management and business logic of the Maker Protocol. Tokens are a simple representation of voting power.
 * **As a recapitalization resource:** MKR can autonomously be minted by the Flopper auction house and sold for DAI, which is used to recap the Maker Protocol in times of insolvency.
 
-## 4. Gotchas \(Potential source of user error\)
+## 4. Gotchas (Potential source of user error)
 
 * The MKR token is an ERC-20 token created using DSToken. A key difference to note between Dai and most other popular ERC20 tokens is that both these fields use `bytes32` instead of the `string` type.
 
-## 5. Failure Modes \(Bounds on Operating Conditions & External Risk Factors\)
+## 5. Failure Modes (Bounds on Operating Conditions & External Risk Factors)
 
 * `MKR.stop` - ES cannot be triggered. MKR in the chief can still vote, but cannot join or exit.
-

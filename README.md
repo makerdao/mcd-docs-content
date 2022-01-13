@@ -6,6 +6,14 @@ description: >-
 
 # Maker Protocol Documentation
 
+## MakerDAO Documentation Overview
+
+* [Introductory](https://makerdao.world/en/) @ MakerDAO.world
+* [Governance](https://manual.makerdao.com) @ manual.makerdao.com
+* [Technical](https://docs.makerdao.com) @ docs.makerdao.com **<-- You are here**
+* [Collateral Onboarding](https://collateral.makerdao.com) @ collateral.makerdao.com
+* [MIPs Portal](https://mips.makerdao.com) @ mips.makerdao.com
+
 ## Introduction&#x20;
 
 MakerDAO is a decentralized organization dedicated to bringing stability to the cryptocurrency economy. The Maker Protocol employs a two-token system. The first being, Dai, a collateral-backed stablecoin that offers stability. The Maker Foundation and the MakerDAO community believe that a decentralized stablecoin is required to have any business or individual realize the advantages of digital money. Second, there is MKR, a governance token that is used by stakeholders to maintain the system and manage Dai. MKR token holders are the decision-makers of the Maker Protocol, supported by the larger public community and various other external parties.&#x20;
@@ -30,10 +38,3 @@ Additionally, there are a few other newly introduced features that come with the
 ## The Maker Protocol Smart Contract Modules System
 
 ![The Maker Protocol System Diagram](<.gitbook/assets/MCD System 2.1.png>)
-
-## More MakerDAO Documentation
-
-* [Introductory](https://makerdao.world/en/) @ MakerDAO.world
-* [Technical](https://docs.makerdao.com) @ docs.makerdao.com **<-- You are here**
-* [Collateral Onboarding](https://collateral.makerdao.com) @ collateral.makerdao.com
-* [MIPs Portal](https://mips.makerdao.com) @ mips.makerdao.com
