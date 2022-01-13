@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Maker Protocol Documentation](README.md)
+* [MakerDAO Technical Docs](README.md)
 
 ## Getting Started
 
