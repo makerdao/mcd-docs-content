@@ -10,7 +10,7 @@ description: >-
 
 * [Introductory](https://makerdao.world/en/) @ MakerDAO.world
 * [Governance](https://manual.makerdao.com) @ manual.makerdao.com
-* ****[**Technical**](https://docs.makerdao.com) **@ docs.makerdao.com** **<-- You are here**
+* ****[**Technical**](https://docs.makerdao.com) **@ docs.makerdao.com** **← You are here**
 * [Collateral Onboarding](https://collateral.makerdao.com) @ collateral.makerdao.com
 * [MIPs Portal](https://mips.makerdao.com) @ mips.makerdao.com
 
