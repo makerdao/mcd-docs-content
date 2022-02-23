@@ -6,9 +6,9 @@ description: The ESM is the trigger system for the shutdown of the Maker Protoco
 
 * **Contract Name:** esm.sol
 * **Type/Category:** Emergency Shutdown Module
-* ****[**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
-* ****[**Contract Source**](https://github.com/makerdao/esm/blob/master/src/ESM.sol)
-* ****[**Etherscan**](https://etherscan.io/address/0x09e05ff6142f2f9de8b6b65855a1d56b6cfe4c58#code)****
+* [**Associated MCD System Diagram**](https://github.com/makerdao/dss/wiki)
+* [**Contract Source**](https://github.com/makerdao/esm/blob/master/src/ESM.sol)
+* [**Etherscan**](https://etherscan.io/address/0x09e05ff6142f2f9de8b6b65855a1d56b6cfe4c58#code)
 
 ## 1. Introduction (Summary)
 
