@@ -22,29 +22,41 @@ The Emergency Shutdown Module (ESM) is a contract with the ability to call `End.
 
 **Key Functionalities (as defined in the smart contract)**
 
-`join` - Deposit MKR to the shutdown module
+`rely` - Grant an address admin powers
+
+`deny` - Revoke admin powers from an address
+
+`file` - Allow admin to update threshold `min` and address of `end`
+
+`cage` - Permanently disable the shutdown module
 
 `fire` - Trigger shutdown by calling `End.cage`
+
+`denyProxy` - Following the wards rely/deny pattern, calls deny on a given contract
+
+`join` - Deposit MKR to the shutdown module
+
+`burn` - Burn any MKR deposited into the shutdown module
 
 **Other**
 
 `gem` - MKR Token contract \[address]
 
-`end` - The End contract \[address]
-
-`min` - Minimum MKR amount required for `fire` \[uint]
-
-`Sum` - Total MKR deposited \[uint]
-
-`pit` - Address where burned `gem`'s are sent \[address]
-
-`fired` - True if `fire` has executed \[bool]
+`wards(admin: address)` - Whether an address has admin powers \[address: uint]
 
 `sum(usr: address)` - MKR join balance by user \[address: uint]
 
+`Sum` - Total MKR deposited \[uint]
+
+`min` - Minimum MKR amount required for `fire` and `denyProxy` \[uint]
+
+`end` - The End contract \[address]
+
+`live` - Whether the contract is live (not caged) \[uint]
+
 ## 3. Key Mechanisms & Concepts
 
-MKR holders that wish to trigger Shutdown must `join` MKR into the ESM, which is immediately burned. When the ESM's internal `Sum` variable is equal to or greater than the minimum threshold (`min`), the ESM's `fire()` method may be called by anyone. This method, in turn, calls `End.cage()`, which starts the Shutdown process.
+MKR holders that wish to trigger Shutdown must `join` MKR into the ESM. When the ESM's internal `Sum` variable is equal to or greater than the minimum threshold (`min`), the ESM's `fire()` and `denyProxy()` methods may be called by anyone. The `fire()` method, in turn, calls `End.cage()`, which starts the Shutdown process.
 
 **The ESM is intended to be used in a few potential scenarios:**
 
@@ -55,17 +67,13 @@ In the case of a malicious governance attack, the joiners will have no expectati
 
 In other cases, the remaining MKR holders may choose to refund the ESM joiners by minting new tokens.
 
-**Note:** If governance wants to disarm the ESM, it can only do so by removing its authorization to call `end.cage()` before the ESM is triggered.
+**Note:** Governance can disarm the ESM by calling `cage()` (this is distinct from `End.cage()`).
 
 ## 4. Gotchas (Potential Source of User Error)
 
 ### Unrecoverable of Funds
 
 It is important for users to keep in mind that joining MKR into the ESM is irreversible—they lose it forever, regardless of whether they successfully trigger Shutdown. While it is possible that the remaining MKR holders may vote to mint new tokens for those that lose them triggering the ESM, there is no guarantee of this.
-
-### Parameter Misconfiguration
-
-The parameters that govern the ESM are set upon creation and cannot be changed (without re-deploying the ESM contract); thus care must be taken to ensure that they are correct and allow the contract to function properly.
 
 ### Game Theory of Funding and Firing the ESM
 
