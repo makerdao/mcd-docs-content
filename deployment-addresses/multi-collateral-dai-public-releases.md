@@ -1,4 +1,4 @@
-# Maker Protocol Smart Contract Deployment
+# Maker Protocol Deployments
 
 ## Find all Maker Protocol contract addresses and ABIs at [chainlog.makerdao.com](https://chainlog.makerdao.com)
 

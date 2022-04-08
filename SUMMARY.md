@@ -50,14 +50,15 @@
 
 ## Deployment Addresses
 
-* [Maker Protocol Smart Contract Deployment](deployment-addresses/multi-collateral-dai-public-releases.md)
+* [Maker Protocol Deployments](deployment-addresses/multi-collateral-dai-public-releases.md)
 
-## MCD Security
+## Security
 
-* [Security for the Maker Protocol](mcd-security/security.makerdao.com.md)
+* [Security for the Maker Protocol](security/security.makerdao.com.md)
 
 ## Building on top of the Maker Protocol <a href="#build" id="build"></a>
 
+* [Developer Guides and Tutorials](build/developer-guides-and-tutorials.md)
 * [The Dai Javascript Library of the Maker Protocol](build/dai.js/README.md)
   * [Getting started](build/dai.js/getting-started.md)
   * [Configuration](build/dai.js/maker/README.md)
@@ -82,7 +83,6 @@
     * [Token Conversion](build/dai.js/single-collateral-dai/token-conversion.md)
     * [Exchange Service](build/dai.js/single-collateral-dai/exchange-service.md)
 * [Pymaker](build/pymaker.md)
-* [Developer Guides and Tutorials](build/developer-guides-and-tutorials.md)
 
 ## Keepers
 
