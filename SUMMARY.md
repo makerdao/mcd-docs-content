@@ -48,9 +48,9 @@
 * [MCD Glossaries](other-documentation/system-glossary.md)
 * [Smart Contract Annotations](other-documentation/smart-contract-annotations.md)
 
-## MCD Changelog
+## Deployment Addresses
 
-* [Multi-Collateral DAI Public Releases](mcd-changelog/multi-collateral-dai-public-releases.md)
+* [Maker Protocol Smart Contract Deployment](deployment-addresses/multi-collateral-dai-public-releases.md)
 
 ## MCD Security
 
