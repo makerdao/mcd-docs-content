@@ -71,7 +71,9 @@ For the most part, `dai.sol` functions as a typical ERC20 token. These tokens ha
 
 ## 4. Gotchas (Potential Source of User Error)
 
-Unlimited allowance is a relatively uncommon practice (though becoming more common). This could be something used to trick a user by a malicious contract into giving access to all their DAI. This is concerning in upgradeable contracts where the contract may appear innocent until upgraded to a malicious contract. Note that the permit() function does not allow specification of a numeric allowance.
+Unlimited allowance is a relatively uncommon practice (though becoming more common). This could be something used to trick a user by a malicious contract into giving access to all their DAI. This is concerning in upgradeable contracts where the contract may appear innocent until upgraded to a malicious contract.
+
+Note that the permit() function does not follow the [EIP-2612](https://eips.ethereum.org/EIPS/eip-2612) standard and allow specification of a numeric allowance because the code was written before EIP-2612 was published.
 
 DAI is also susceptible to the known [ERC20 race condition](https://github.com/0xProject/0x-monorepo/issues/850), but should not normally be an issue with unlimited approval. We recommend any users using the `approval` for a specific amount be aware of this particular issue and use caution when authorizing other contracts to perform transfers on their behalf.
 
