@@ -28,7 +28,7 @@ Additionally, there are a few other newly introduced features that come with the
 * Support for multiple Vault collateral types (Launching with ETH and BAT)
   * To open a Vault, head to [**Oasis Borrow**](https://oasis.app/borrow)****
 * [Dai Savings Rate (DSR)](https://blog.makerdao.com/why-the-dai-savings-rate-is-a-game-changer-for-the-defi-ecosystem-and-beyond/)&#x20;
-  * To use the DSR, head to [**Oasis Save** ](https://oasis.app/save)****
+  * To use the DSR, head to [**Oasis Earn** ](https://oasis.app/earn)****
 * More robust peg ensuring mechanisms (MKR acting as backstop)
 * Stability fees paid every block, rather than on Dai repayment
 * [New Maker Terminology ](https://blog.makerdao.com/say-goodbye-to-cdps-and-hello-to-maker-vaults/)
