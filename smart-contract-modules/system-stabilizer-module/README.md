@@ -65,7 +65,7 @@ The purpose of debt auctions is to cover the system deficit, which is resembled 
 1. To raise an amount of Dai equivalent to the amount of bad debt as fast as possible.
 2. To minimize the amount of MKR inflation.
 
-![A diagram detailing the interactions a user has with Flopper and the Vow](../../.gitbook/assets/flop\_auction\_interaction\_diagram.png)
+![A diagram detailing the interactions a user has with Flopper and the Vow](<../../.gitbook/assets/flop\_auction\_interaction\_diagram (1).png>)
 
 #### Flap
 

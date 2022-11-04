@@ -1,8 +1,8 @@
 # Maker Protocol Deployments
 
-## Find all Maker Protocol contract addresses and ABIs at [chainlog.makerdao.com](https://chainlog.makerdao.com)
+## Find all Maker Protocol contract addresses and ABIs at [chainlog.makerdao.com](https://chainlog.makerdao.com/)
 
-The [Chainlog](https://chainlog.makerdao.com) provides valuable information for developers interacting with Maker Protocol deployments. This includes deployments on the following networks:&#x20;
+The [Chainlog](https://chainlog.makerdao.com/) provides valuable information for developers interacting with Maker Protocol deployments. This includes deployments on the following networks:&#x20;
 
 * **Ethereum Mainnet (**[**latest release**](https://chainlog.makerdao.com/api/mainnet/active.json)**)**
 * **Ethereum Goerli Testnet (**[**latest release**](https://chainlog.makerdao.com/api/goerli/active.json)**)**

@@ -36,7 +36,7 @@ sudo apt-get install build-essential automake libtool pkg-config libffi-dev pyth
 
 #### Known macOS issues
 
-In order for the Python requirements to install correctly on _macOS_, please install `openssl`, `libtool`, `pkg-config` and `automake` using [Homebrew](https://brew.sh):
+In order for the Python requirements to install correctly on _macOS_, please install `openssl`, `libtool`, `pkg-config` and `automake` using [Homebrew](https://brew.sh/):
 
 ```
 brew install openssl libtool pkg-config automake
@@ -349,4 +349,4 @@ You can then run all tests with:
 ./test.sh
 ```
 
-If you have questions regarding Pymaker, please reach out to us on the [#keeper](https://chat.makerdao.com/channel/keeper) channel on [**chat.makerdao.com**](http://chat.makerdao.com).
+If you have questions regarding Pymaker, please reach out to us on the [#keeper](https://chat.makerdao.com/channel/keeper) channel on [**chat.makerdao.com**](http://chat.makerdao.com/).

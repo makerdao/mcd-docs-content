@@ -4,34 +4,34 @@ description: >-
   the Dai stablecoin against crypto collateral assets. Learn how it works.
 ---
 
-# Maker Protocol Documentation
+# MakerDAO Technical Docs
 
 ## MakerDAO Documentation Overview
 
 * [Introductory](https://makerdao.world/en/) @ MakerDAO.world
 * [Governance](https://manual.makerdao.com) @ manual.makerdao.com
-* ****[**Technical**](https://docs.makerdao.com) **@ docs.makerdao.com** **← You are here**
+* [**Technical**](https://docs.makerdao.com) **@ docs.makerdao.com** **← You are here**
 * [Collateral Onboarding](https://collateral.makerdao.com) @ collateral.makerdao.com
 * [MIPs Portal](https://mips.makerdao.com) @ mips.makerdao.com
 
-## Introduction&#x20;
+## Introduction
 
-MakerDAO is a decentralized organization dedicated to bringing stability to the cryptocurrency economy. The Maker Protocol employs a two-token system. The first being, Dai, a collateral-backed stablecoin that offers stability. The Maker Foundation and the MakerDAO community believe that a decentralized stablecoin is required to have any business or individual realize the advantages of digital money. Second, there is MKR, a governance token that is used by stakeholders to maintain the system and manage Dai. MKR token holders are the decision-makers of the Maker Protocol, supported by the larger public community and various other external parties.&#x20;
+MakerDAO is a decentralized organization dedicated to bringing stability to the cryptocurrency economy. The Maker Protocol employs a two-token system. The first being, Dai, a collateral-backed stablecoin that offers stability. The Maker Foundation and the MakerDAO community believe that a decentralized stablecoin is required to have any business or individual realize the advantages of digital money. Second, there is MKR, a governance token that is used by stakeholders to maintain the system and manage Dai. MKR token holders are the decision-makers of the Maker Protocol, supported by the larger public community and various other external parties.
 
 Maker is unlocking the power of decentralized finance for everyone by creating an inclusive platform for economic empowerment; enabling everyone with equal access to the global financial marketplace.
 
-With the new version of the **Maker Protocol**, Multi Collateral Dai (MCD), being released and live on the main Ethereum network, we wanted to go over a few of the changes and features that it comes with. The biggest change to the Maker Protocol is that it now accepts any Ethereum-based asset as collateral to generate Dai given that it has been approved by MKR holders and has been given specific, corresponding Risk Parameters through the Maker decentralized governance process.&#x20;
+With the new version of the **Maker Protocol**, Multi Collateral Dai (MCD), being released and live on the main Ethereum network, we wanted to go over a few of the changes and features that it comes with. The biggest change to the Maker Protocol is that it now accepts any Ethereum-based asset as collateral to generate Dai given that it has been approved by MKR holders and has been given specific, corresponding Risk Parameters through the Maker decentralized governance process.
 
 Additionally, there are a few other newly introduced features that come with the MCD upgrade. **These new features include:**
 
-* ****[New Dai token ($DAI)](https://blog.makerdao.com/creating-the-brand-identity-for-the-worlds-first-unbiased-currency-dai/)
+* [New Dai token ($DAI)](https://blog.makerdao.com/creating-the-brand-identity-for-the-worlds-first-unbiased-currency-dai/)
 * Support for multiple Vault collateral types (Launching with ETH and BAT)
-  * To open a Vault, head to [**Oasis Borrow**](https://oasis.app/borrow)****
-* [Dai Savings Rate (DSR)](https://blog.makerdao.com/why-the-dai-savings-rate-is-a-game-changer-for-the-defi-ecosystem-and-beyond/)&#x20;
-  * To use the DSR, head to [**Oasis Earn** ](https://oasis.app/earn)****
+  * To open a Vault, head to [**Oasis Borrow**](https://oasis.app/borrow)
+* [Dai Savings Rate (DSR)](https://blog.makerdao.com/why-the-dai-savings-rate-is-a-game-changer-for-the-defi-ecosystem-and-beyond/)
+  * To use the DSR, head to [**Oasis Earn**](https://oasis.app/earn)
 * More robust peg ensuring mechanisms (MKR acting as backstop)
 * Stability fees paid every block, rather than on Dai repayment
-* [New Maker Terminology ](https://blog.makerdao.com/say-goodbye-to-cdps-and-hello-to-maker-vaults/)
+* [New Maker Terminology](https://blog.makerdao.com/say-goodbye-to-cdps-and-hello-to-maker-vaults/)
 * MKR and governance remains the same
 * [Oasis Trade](https://oasis.app/trade)
 

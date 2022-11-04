@@ -63,17 +63,17 @@ During an Emergency Shutdown, each of the various Maker Ecosystem Stakeholders s
 
 ### **Dai Holders**
 
-If your wallet has the viable interface to claim Collateral or migrate your Dai, or it has a Dapp browser built into it, you may use the [migration portal](https://migrate.makerdao.com) to claim Collateral and/or migrate. If your wallet does **not** support the above functionality, you must transfer your Dai to a new wallet that enables the functionality before proceeding to use the [migration portal](https://migrate.makerdao.com).
+If your wallet has the viable interface to claim Collateral or migrate your Dai, or it has a Dapp browser built into it, you may use the [migration portal](https://migrate.makerdao.com/) to claim Collateral and/or migrate. If your wallet does **not** support the above functionality, you must transfer your Dai to a new wallet that enables the functionality before proceeding to use the [migration portal](https://migrate.makerdao.com/).
 
 ### **Vault Owners**
 
-If you use [Oasis.app/borrow](https://oasis.app/borrow) to manage your Vault, proceed to the [migration portal](https://migrate.makerdao.com) and follow the outlined emergency redemption process.
+If you use [Oasis.app/borrow](https://oasis.app/borrow) to manage your Vault, proceed to the [migration portal](https://migrate.makerdao.com/) and follow the outlined emergency redemption process.
 
-If you are a user of a third-party interface, such as [DefiSaver](http://defisaver.com) or [InstaDapp](https://instadapp.io), verify that they have Emergency Shutdown Interfaces built-in before proceeding. If so, use their interface to claim the excess Collateral or migrate to a newly deployed system. If the third-party provider does not have the redemption process built-in, transfer to the [migration portal](https://migrate.makerdao.com) if possible.
+If you are a user of a third-party interface, such as [DefiSaver](http://defisaver.com/) or [InstaDapp](https://instadapp.io/), verify that they have Emergency Shutdown Interfaces built-in before proceeding. If so, use their interface to claim the excess Collateral or migrate to a newly deployed system. If the third-party provider does not have the redemption process built-in, transfer to the [migration portal](https://migrate.makerdao.com/) if possible.
 
 ### **MKR Holders**
 
-MKR holders may vote on polls and executive votes as it relates to the Emergency Shutdown triggering process. This is done in the Emergency Shutdown Module (ESM) frontend or directly through the [ES CLI](https://docs.makerdao.com/clis/emergency-shutdown-es-cli). Additionally, MKR holders may also vote as it relates to a future redeployment of the Maker Protocol on the [Governance Portal](http://vote.makerdao.com).
+MKR holders may vote on polls and executive votes as it relates to the Emergency Shutdown triggering process. This is done in the Emergency Shutdown Module (ESM) frontend or directly through the [ES CLI](https://docs.makerdao.com/clis/emergency-shutdown-es-cli). Additionally, MKR holders may also vote as it relates to a future redeployment of the Maker Protocol on the [Governance Portal](http://vote.makerdao.com/).
 
 ### **Centralized Exchange or Custodial Wallet**
 
@@ -87,8 +87,8 @@ In the case of Emergency Shutdown, service providers may follow the actions reco
 **Scenario: Shutdown**
 
 * Choose one of the following options:
-  * **Option 1:** Let users withdraw Dai and MKR from the platform, and then guide them to the [migration portal](https://migrate.makerdao.com) for the redemption process.
-  * **Option 2:** Claim Dai equivalent in Collateral on behalf of users using the [migration portal](https://migrate.makerdao.com).
+  * **Option 1:** Let users withdraw Dai and MKR from the platform, and then guide them to the [migration portal](https://migrate.makerdao.com/) for the redemption process.
+  * **Option 2:** Claim Dai equivalent in Collateral on behalf of users using the [migration portal](https://migrate.makerdao.com/).
   * Choose one of the following:
     * Distribute Collateral to users.
     * Get withdrawal address from users for collateral types not supported on the exchange.
@@ -96,9 +96,9 @@ In the case of Emergency Shutdown, service providers may follow the actions reco
 
 **Scenario: Redeployment**
 
-* Migrate Dai holdings to new Dai token on behalf of users using the [migration portal](https://migrate.makerdao.com).
+* Migrate Dai holdings to new Dai token on behalf of users using the [migration portal](https://migrate.makerdao.com/).
 * Alternatively, carry out-migration by interacting directly with the migration contracts using CLI tools. See [this guide](https://github.com/makerdao/developerguides/blob/master/governance/Collateral%20Redemption%20during%20Emergency%20Shutdown.md).
-* If applicable, migrate MKR token holdings on behalf of users using the [migration portal](https://migrate.makerdao.com)
+* If applicable, migrate MKR token holdings on behalf of users using the [migration portal](https://migrate.makerdao.com/)
 * Update token address(es) in your system.
 
 ### **Non-Custodial Wallet**
@@ -108,29 +108,29 @@ In case of Emergency Shutdown, non-custodial wallet providers should alert your 
 #### **Recommended Procedure**
 
 * **Scenario: Shutdown**
-  * Redirect users to the [migration portal](https://migrate.makerdao.com) to claim their Dai equivalent in Collateral, or create an interface to handle the process locally.
+  * Redirect users to the [migration portal](https://migrate.makerdao.com/) to claim their Dai equivalent in Collateral, or create an interface to handle the process locally.
 * **Scenario: Redeployment**
-  * Inform users to migrate their Dai on the [migration portal](https://migrate.makerdao.com), or create an internal interface to handle the process locally.
+  * Inform users to migrate their Dai on the [migration portal](https://migrate.makerdao.com/), or create an internal interface to handle the process locally.
   * Add featured support for new token(s).
 
 ### **Decentralized Exchanges (DEXs)**
 
 As a decentralized exchange, you can inform users with a banner about the current status of the Maker Protocol and direct them toward relevant communication channels to find out more. **You may choose one of the two following options to allow your users to carry out the ES redemption process:**
 
-* Direct them to the [migration portal](https://migrate.makerdao.com), where they can start the claiming process for their Dai.
+* Direct them to the [migration portal](https://migrate.makerdao.com/), where they can start the claiming process for their Dai.
 * Build an interface to handle the ES process on your platform, inform your users, and have them act accordingly.
 
 #### **Recommended Procedure:**
 
 * **Scenario: Shutdown**
-  * Inform users to claim equivalent value of Dai in Collateral on the [migration portal](https://migrate.makerdao.com) or create an interface to handle the process locally.
+  * Inform users to claim equivalent value of Dai in Collateral on the [migration portal](https://migrate.makerdao.com/) or create an interface to handle the process locally.
 * **Scenario: Redeployment**
-  * Inform users to migrate their Dai to the new Dai (and MKR if applicable) on the [migration portal](https://migrate.makerdao.com), or create an interface to handle the process on your platform.
+  * Inform users to migrate their Dai to the new Dai (and MKR if applicable) on the [migration portal](https://migrate.makerdao.com/), or create an interface to handle the process on your platform.
   * Add new token(s) to the exchange.
 
 ### **Dapp Browsers**
 
-As a dapp browser, please make sure to alert your user base about ES and provide links to more information (e.g.,[ blog.makerdao.com](http://blog.makerdao.com) or[ makerdao.com](http://makerdao.com)). In case of either an emergency system shutdown or system redeployment after ES is triggered, redirect your users to the [migration portal](https://migrate.makerdao.com) to claim their Collateral.
+As a dapp browser, please make sure to alert your user base about ES and provide links to more information (e.g.,[ blog.makerdao.com](http://blog.makerdao.com) or[ makerdao.com](http://makerdao.com)). In case of either an emergency system shutdown or system redeployment after ES is triggered, redirect your users to the [migration portal](https://migrate.makerdao.com/) to claim their Collateral.
 
 ### **Vault Integrators**
 
@@ -139,11 +139,11 @@ As a Vault integrator, it is very important that you integrate with Maker Protoc
 **Recommended Procedure**
 
 * **Scenario: Shutdown**
-  * Claim users’ funds through the [migration portal](https://migrate.makerdao.com) or by direct interaction with the migration contracts, and make them available in their accounts.
+  * Claim users’ funds through the [migration portal](https://migrate.makerdao.com/) or by direct interaction with the migration contracts, and make them available in their accounts.
 * **Scenario: Redeployment**
-  * Migrate users’ funds to a new redeployed system using the [migration portal](https://migrate.makerdao.com) or by interacting directly with the migration contracts.
+  * Migrate users’ funds to a new redeployed system using the [migration portal](https://migrate.makerdao.com/) or by interacting directly with the migration contracts.
 
-As a **non-custodial Vault integrator**, please make sure to integrate with the Maker Protocol contracts (end.sol). This allows you to be notified at the exact moment the Shutdown has been triggered. Otherwise, it is suggested that you inform your users on how they can free Collateral in Vaults. This can either be done in the non-custodial Vault integrator’s UI or you can direct them to [Oasis.app/borrow](https://oasis.app/borrow) if the users need to migrate their Vault. If you do decide to use your own services, you will need a UI that allows users to withdraw their Vaults from a proxy contract so it shows up on the [migration portal](https://migrate.makerdao.com). Direct your users there. Alternatively, you may create an interface that will help users migrate their Dai in case of a new redeployment, or allow users to claim their Collateral in case of an only shutdown scenario.
+As a **non-custodial Vault integrator**, please make sure to integrate with the Maker Protocol contracts (end.sol). This allows you to be notified at the exact moment the Shutdown has been triggered. Otherwise, it is suggested that you inform your users on how they can free Collateral in Vaults. This can either be done in the non-custodial Vault integrator’s UI or you can direct them to [Oasis.app/borrow](https://oasis.app/borrow) if the users need to migrate their Vault. If you do decide to use your own services, you will need a UI that allows users to withdraw their Vaults from a proxy contract so it shows up on the [migration portal](https://migrate.makerdao.com/). Direct your users there. Alternatively, you may create an interface that will help users migrate their Dai in case of a new redeployment, or allow users to claim their Collateral in case of an only shutdown scenario.
 
 ### **Decentralized Applications (Dapps)**
 
@@ -151,15 +151,15 @@ Dapps are suggested to integrate with Maker Protocol contracts (end.sol), which 
 
 * A UI interface that alerts and informs users about the event.
 * If your Dapp uses a proxy, you will need to enable users to exit from the proxy in order to use the migration app/portal.&#x20;
-* Provide official communication channels for more information as well as a link to the [migration portal](https://migrate.makerdao.com) for Dai and Vault redemption.
+* Provide official communication channels for more information as well as a link to the [migration portal](https://migrate.makerdao.com/) for Dai and Vault redemption.
 
 #### **Custodial Services**
 
-If you control access to the smart contracts backing your Dapp, it is suggested to allow your users to retrieve Dai or access their Vaults from their personal wallet as well as direct them to the [migration portal](https://migrate.makerdao.com) for the ES redemption process. Alternatively, you may claim Dai collateral or claim excess Collateral from Vaults on behalf of your users at the[ migration portal](https://migrate.makerdao.com), and proceed to distribute it to your users, ensuring that they successfully retrieve it.
+If you control access to the smart contracts backing your Dapp, it is suggested to allow your users to retrieve Dai or access their Vaults from their personal wallet as well as direct them to the [migration portal](https://migrate.makerdao.com/) for the ES redemption process. Alternatively, you may claim Dai collateral or claim excess Collateral from Vaults on behalf of your users at the[ migration portal](https://migrate.makerdao.com/), and proceed to distribute it to your users, ensuring that they successfully retrieve it.
 
 #### **Non-Custodial Services**
 
-If you don’t control the smart contracts backing your Dapp directly, then you may direct your users to the [migration portal](https://migrate.makerdao.com) for Dai and Vault redemption. Alternatively, you may create an interface that allows your users to claim a Dai equivalent in Collateral, or claim excess Collateral from Vaults in case of a system shutdown. Additionally, if there's a redeployment of the system, migrate Dai to the new redeployed system and/or claim excess Collateral from Vaults.
+If you don’t control the smart contracts backing your Dapp directly, then you may direct your users to the [migration portal](https://migrate.makerdao.com/) for Dai and Vault redemption. Alternatively, you may create an interface that allows your users to claim a Dai equivalent in Collateral, or claim excess Collateral from Vaults in case of a system shutdown. Additionally, if there's a redeployment of the system, migrate Dai to the new redeployed system and/or claim excess Collateral from Vaults.
 
 ### **Market Makers**
 
@@ -259,13 +259,13 @@ Lastly, the system will allow the exchange of some of the Dai that has been lock
 
 ### **Rocket Chat Channels**
 
-* [Chat.makerdao.com](http://chat.makerdao.com). Support channels include but are not limited to:
+* [Chat.makerdao.com](http://chat.makerdao.com/). Support channels include but are not limited to:
   * **#general**&#x20;
   * **#dev**
   * **#governance-and-risk**
   * **#help**
 
-[**Forum.Makerdao.com** ](https://forum.makerdao.com) ****&#x20;
+[**Forum.Makerdao.com** ](https://forum.makerdao.com/) ****&#x20;
 
 * [Governance](https://forum.makerdao.com/c/governance/5)&#x20;
 * [Risk](https://forum.makerdao.com/c/risk/6)

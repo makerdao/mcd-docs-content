@@ -75,11 +75,11 @@ If you are running Linux or macOS you can take advantage of our all in one insta
 $ curl https://dapp.tools/install | sh
 ```
 
-If you're having issues with installation, head over to the ['Manual Installation' section](http://dapp.tools)
+If you're having issues with installation, head over to the ['Manual Installation' section](http://dapp.tools/)
 
 **Keeper Ethereum Address**
 
-Your Keeper will publish transactions through this address. Your ethereum address needs to be accessible by [seth](https://github.com/dapphub/dapptools/tree/master/src/seth), in order to deploy TxManager through [dapp.tools](http://dapp.tools). Furthermore, when the Keeper is deployed and in operation, this address must contain some ETH for transaction costs as well as an amount of entry-tokens equal to the max-engagement set by the User. Follow [these instructions](https://github.com/dapphub/dapptools/tree/master/src/seth#key-management-and-signing) to ensure seth can see your keystore and passphrase files.
+Your Keeper will publish transactions through this address. Your ethereum address needs to be accessible by [seth](https://github.com/dapphub/dapptools/tree/master/src/seth), in order to deploy TxManager through [dapp.tools](http://dapp.tools/). Furthermore, when the Keeper is deployed and in operation, this address must contain some ETH for transaction costs as well as an amount of entry-tokens equal to the max-engagement set by the User. Follow [these instructions](https://github.com/dapphub/dapptools/tree/master/src/seth#key-management-and-signing) to ensure seth can see your keystore and passphrase files.
 
 If you'd like to start from scratch, [install geth](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) and use `geth account new`, to create a new account, set a passphrase, and place the passphrase into a `<address>.txt` file in the `~/Library/Ethereum/passphrase/` directory; the corresponding keystore file can be found in the `~/Library/Ethereum/keystore/` directory. Both the keystore and passphrase files will later be passed into the Keeper as an argument. Make a note of your Keeper Ethereum Address, its keystore file location and passphrase file location.
 
@@ -104,7 +104,7 @@ The output of `dapp create` is the address to your TxManager
 
 **Deploy/Find a parity node**
 
-You need access to a JSON-RPC host that’s connected to a parity node. Unfortunately, Infura APIs are not connected to parity nodes, so you will need to find access to a remote endpoint (one example is [https://rivet.cloud/](https://rivet.cloud)) or run a node on your local machine. An example of a remote node could be [https://kovan.sampleparitynode.com:8545](https://kovan.sampleparitynode.com:8545)
+You need access to a JSON-RPC host that’s connected to a parity node. Unfortunately, Infura APIs are not connected to parity nodes, so you will need to find access to a remote endpoint (one example is [https://rivet.cloud/](https://rivet.cloud/)) or run a node on your local machine. An example of a remote node could be [https://kovan.sampleparitynode.com:8545](https://kovan.sampleparitynode.com:8545/)
 
 **Uniswap Exchange Addresses**
 

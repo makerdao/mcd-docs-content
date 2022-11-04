@@ -53,11 +53,11 @@ To redeem Dai and/or excess collateral in the event of Emergency Shutdown
 
 #### **1. Installation**
 
-In order to interface with the Ethereum blockchain, the user needs to install seth, a command line tool as part of the [Dapp.Tools](https://dapp.tools) toolset. We also provide further [installation information here](https://github.com/makerdao/developerguides/blob/master/devtools/seth/seth-guide-01/seth-guide-01.md). Once the user has installed and configured **`[seth](<https://dapp.tools/>)`** correctly to use the main Ethereum network and the address which holds their MKR, they can query contract balances, approvals and transfers.
+In order to interface with the Ethereum blockchain, the user needs to install seth, a command line tool as part of the [Dapp.Tools](https://dapp.tools/) toolset. We also provide further [installation information here](https://github.com/makerdao/developerguides/blob/master/devtools/seth/seth-guide-01/seth-guide-01.md). Once the user has installed and configured **`[seth](<https://dapp.tools/>)`** correctly to use the main Ethereum network and the address which holds their MKR, they can query contract balances, approvals and transfers.
 
 #### **2. Contract Address Setup**
 
-The user will require the following contract addresses, shown below as mainnet addresses. Rest of mainnet or testnet addresses are accessible at [changelog.makerdao.com](https://changelog.makerdao.com) which can be verified on [Etherscan](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2). Similarly, additional information on the commands described below can be found in the [End contract](https://github.com/makerdao/dss/blob/master/src/end.sol) and the [Proxy\_Actions\_End contract](https://github.com/makerdao/dss-proxy-actions/blob/master/src/DssProxyActions.sol#L793). These should be setup in the following manner and pasted into the terminal line by line:
+The user will require the following contract addresses, shown below as mainnet addresses. Rest of mainnet or testnet addresses are accessible at [changelog.makerdao.com](https://changelog.makerdao.com/) which can be verified on [Etherscan](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2). Similarly, additional information on the commands described below can be found in the [End contract](https://github.com/makerdao/dss/blob/master/src/end.sol) and the [Proxy\_Actions\_End contract](https://github.com/makerdao/dss-proxy-actions/blob/master/src/DssProxyActions.sol#L793). These should be setup in the following manner and pasted into the terminal line by line:
 
 ```
 export DAI=0x6B175474E89094C44Da98b954EedeAC495271d0F

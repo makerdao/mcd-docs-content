@@ -6,7 +6,7 @@ description: Ensuring the Security of the Maker Protocol and Multi Collateral Da
 
 ## **Introduction**
 
-****[**Security.makerdao.com**](https://security.makerdao.com) **** is dedicated to providing transparency to our community with respect to the results of our MCD Audits, our Bug Bounty Program, and Formal Verification. It is important to note that this release is the first version and we will continue to add information as it becomes available.
+****[**Security.makerdao.com**](https://security.makerdao.com/) **** is dedicated to providing transparency to our community with respect to the results of our MCD Audits, our Bug Bounty Program, and Formal Verification. It is important to note that this release is the first version and we will continue to add information as it becomes available.
 
 ## 1. Updates On MCD Security Roadmap
 

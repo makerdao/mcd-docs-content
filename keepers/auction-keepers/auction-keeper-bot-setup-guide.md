@@ -148,7 +148,7 @@ Any messages written by a Bidding Model to **stderr** (standard error) will be p
 * Git
 * [Python v3.6.6](https://www.python.org/downloads/release/python-366/)
 * [virtualenv](https://virtualenv.pypa.io/en/latest/)
-  * This project requires _virtualenv_ to be installed if you want to use Maker's python tools. This helps to ensure that you are running the right version of python as well as check that all of the pip packages that are installed in the [install.sh](http://install.sh) are in the right place and have the correct versions.
+  * This project requires _virtualenv_ to be installed if you want to use Maker's python tools. This helps to ensure that you are running the right version of python as well as check that all of the pip packages that are installed in the [install.sh](http://install.sh/) are in the right place and have the correct versions.
 * [X-code](https://apps.apple.com/ca/app/xcode/id497799835?mt=12) (for Macs)
 * [Docker-Compose](https://docs.docker.com/compose/install/)
 
@@ -373,7 +373,7 @@ seth send 0xcbd3e165ce589657fefd2d38ad6b6596a1f734f6 'gulp(address)' 0xaaf64bfcc
 * The `0x94598157fcf0715c3bc9b4a35450cce82ac57b20` address is the faucet that issues 1 MKR per request.
 * The `0xaaf64bfcc32d0f15873a02163e7e500671a4ffcd` address is that of the MCD K-MKR token. It will issue 1 MKR.
 
-**Important Note:** The faucet address and token addresses often change with each dss deployment. The current addresses displayed above are from the **0.2.12 Release**. Please visit [https://changelog.makerdao.com/](https://changelog.makerdao.com) for the most updated release version.
+**Important Note:** The faucet address and token addresses often change with each dss deployment. The current addresses displayed above are from the **0.2.12 Release**. Please visit [https://changelog.makerdao.com/](https://changelog.makerdao.com/) for the most updated release version.
 
 Please refer to this [guide](https://github.com/makerdao/developerguides/blob/master/mcd/mcd-seth/mcd-seth-01.md#getting-tokens) to obtain collateral test tokens for Kovan.
 

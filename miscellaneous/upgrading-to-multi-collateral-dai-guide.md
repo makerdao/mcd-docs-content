@@ -61,7 +61,7 @@ The following section will outline a recommended migration process for different
 
 **You control your private key**
 
-If you hold your Sai in a wallet where you control your private keys, then head to [migrate.makerdao.com](https://migrate.makerdao.com) (available at MCD launch) and follow the instructions to upgrade your Sai to Dai and optionally activate the Dai Savings Rate smart contract, which allows you to earn savings.
+If you hold your Sai in a wallet where you control your private keys, then head to [migrate.makerdao.com](https://migrate.makerdao.com/) (available at MCD launch) and follow the instructions to upgrade your Sai to Dai and optionally activate the Dai Savings Rate smart contract, which allows you to earn savings.
 
 **The following figure outlines the migration flow:**
 
@@ -69,13 +69,13 @@ If you hold your Sai in a wallet where you control your private keys, then head 
 
 **You don’t control your private key**
 
-If your Sai is deposited in an exchange or centralized wallet or locked in a dApp smart contract, you can follow the instructions these platforms are providing or withdraw the Sai and complete the upgrade yourself at [migrate.makerdao.com](https://migrate.makerdao.com)
+If your Sai is deposited in an exchange or centralized wallet or locked in a dApp smart contract, you can follow the instructions these platforms are providing or withdraw the Sai and complete the upgrade yourself at [migrate.makerdao.com](https://migrate.makerdao.com/)
 
 With MCD you can deposit your Dai into the Dai Savings Rate smart contract which will earn you accrued annual savings. Find more info at makerdao.com at launch.
 
 ### As a SCD CDP Owner
 
-As a SCD CDP owner you can move your CDP to the MCD CDP core through the Migration App at [migrate.makerdao.com](https://migrate.makerdao.com) at launch. The following diagram shows the flow for CDP migration.
+As a SCD CDP owner you can move your CDP to the MCD CDP core through the Migration App at [migrate.makerdao.com](https://migrate.makerdao.com/) at launch. The following diagram shows the flow for CDP migration.
 
 ![](https://camo.githubusercontent.com/24123aa333aa2f506c72d48345fc478e9a8095bc/68747470733a2f2f6c68342e676f6f676c6575736572636f6e74656e742e636f6d2f556f47593738685f545078654d3868327132616f4a6862774b55324b41394d59486577364c397943324766486b6d664c6d397952556b464e707278774b667876614a41495366514472635549555764724268695251793764334e575670573951734157493843706d684a61685250595030386f4c505865576677526f6e41624364546c3933726f73)
 
@@ -85,11 +85,11 @@ If you have a large SCD CDP, the migration contract might not have enough Sai li
 
 **Notes on Instadapp**
 
-If you have created your CDP through the Instadapp service, you need to withdraw ownership of the CDP from the service back to you. To do this, you need to navigate to the [exit page](https://instadapp.io/exit/) and click “Withdraw” on your CDP in the tab “Debt Positions”. This will give you custody of the CDP, which will make it visible at [migrate.makerdao.com](https://migrate.makerdao.com) where you will be able to carry out CDP migration.
+If you have created your CDP through the Instadapp service, you need to withdraw ownership of the CDP from the service back to you. To do this, you need to navigate to the [exit page](https://instadapp.io/exit/) and click “Withdraw” on your CDP in the tab “Debt Positions”. This will give you custody of the CDP, which will make it visible at [migrate.makerdao.com](https://migrate.makerdao.com/) where you will be able to carry out CDP migration.
 
 **Notes on MyEtherWallet**
 
-If you have created your CDP on MyEtherWallet then you can migrate your CDP using the Migration App at [migrate.makerdao.com](https://migrate.makerdao.com). (However, if the private key used with MyEtherWallet is stored in a local file or another unsupported format, you must first import your key to a wallet with Web3 support.)
+If you have created your CDP on MyEtherWallet then you can migrate your CDP using the Migration App at [migrate.makerdao.com](https://migrate.makerdao.com/). (However, if the private key used with MyEtherWallet is stored in a local file or another unsupported format, you must first import your key to a wallet with Web3 support.)
 
 Once upgraded, you can start using Dai Savings Rate by locking your Dai into the Dai Savings Rate smart contract and receive accrued savings. Find more info on makerdao.com at launch.
 
@@ -128,7 +128,7 @@ We recommend you take the following steps for upgrading to MCD:
   * Optional: Provide a UI in your own interface for token migration through the migration contract.
 * Inform users about Dai Savings Rate, which allows Dai holders to earn savings.
   * Optional: Build a UI that facilitates the usage of the Dai Savings Rate service for your users in your exchange, where users will keep the accrued savings themselves.
-  * Optional: Link users to [oasis.app](https://oasis.app) to activate Dai Savings Rate.
+  * Optional: Link users to [oasis.app](https://oasis.app/) to activate Dai Savings Rate.
 
 ### As a Non-Custodial Wallet
 
@@ -138,11 +138,11 @@ If you are a creator of a wallet that allows users to be in control of their pri
 * Select a future date between November 18-25 to execute the upgrade to support Multi-Collateral Dai, which should be listed as "Dai". The new token is deployed at [0x6b175474e89094c44da98b954eedeac495271d0f](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) - use the [updated logos found here](https://www.notion.so/makerdao/Maker-Brand-ac517c82ff9a43089d0db5bb2ee045a4) for the new Dai token. Logo for Sai should remain the yellow diamond.
 * Inform your users as soon as possible about the timeline for your own upgrade to MCD.
 * Support balances of both Sai and Dai for a period until Sai demand diminishes.
-* Inform your users that they will be able to swap Sai for Dai at [migrate.makerdao.com](https://migrate.makerdao.com).
+* Inform your users that they will be able to swap Sai for Dai at [migrate.makerdao.com](https://migrate.makerdao.com/).
   * Optional: Provide a UI in your own interface for token migration through the migration contract.
 * Inform users about Dai Savings Rate, which allows Dai holders to earn savings.
   * Optional: Create a UI where users can activate Dai Savings Rate.
-  * Optional: Link users to [oasis.app](https://oasis.app) to activate Dai Savings Rate.
+  * Optional: Link users to [oasis.app](https://oasis.app/) to activate Dai Savings Rate.
 * Optional: Implement paying the gas cost of Dai transactions on behalf of your users.
 
 ### As a Keeper
@@ -190,7 +190,7 @@ Alternatively, if you’re willing to do some additional work and work with a lo
     * If you have integrated directly with the CDP smart contracts, see “[Direct integration with smart contracts](https://github.com/makerdao/developerguides/blob/master/mcd/upgrading-to-multi-collateral-dai/upgrading-to-multi-collateral-dai.md#direct-integration-with-smart-contracts)” below for how to upgrade your implementation to MCD.
   * List the Multi-Collateral Dai token as "Dai"
 * Choose one of the following:
-  * Option A: Point your users to [migrate.makerdao.com](https://migrate.makerdao.com) at MCD launch date for CDP migration on their CDP dashboard. See also the Migration App section below.
+  * Option A: Point your users to [migrate.makerdao.com](https://migrate.makerdao.com/) at MCD launch date for CDP migration on their CDP dashboard. See also the Migration App section below.
   * Option B: Create your own UI for migration, by creating a frontend to interact with the migration contract (see section below on Migration Contract).
 
 ### **Upgrading your CDP integration implementation**
@@ -200,7 +200,7 @@ Alternatively, if you’re willing to do some additional work and work with a lo
 * If you have integrated CDPs using the [Dai.js library](https://github.com/makerdao/dai.js), ensure you have updated the library to the latest version.
 * Update your codebase to support the functionality of the [MCD plugin](https://github.com/makerdao/dai.js/tree/dev/packages/dai-plugin-mcd). At launch this plugin will be bundled into the Dai.js library as default.
 * Optional: Help your users migrate their CDP to MCD
-  * Option A: Point users to [migrate.makerdao.com](https://migrate.makerdao.com) if your app is Web3 compatible.
+  * Option A: Point users to [migrate.makerdao.com](https://migrate.makerdao.com/) if your app is Web3 compatible.
   * Option B: Implement your own migration UI in your app, connecting to the migration contract described in a section below.
   * Option C: If your app is not compatible with migrate.makerdao.com, you can guide your users in how to export their CDP from your app to a compatible wallet.
 * Optional: Implement support for new MCD functionality
@@ -214,7 +214,7 @@ Alternatively, if you’re willing to do some additional work and work with a lo
   * [You can find an introduction to the system here](https://github.com/makerdao/developerguides/blob/master/mcd/mcd-101/mcd-101.md)
 * Implement support for the MCD smart contracts
   * [Checkout this guide on how to interact with the CDP manager.](https://github.com/makerdao/developerguides/blob/master/mcd/mcd-seth/mcd-seth-01.md)
-* Point codebase to the new [MCD smart contracts](https://changelog.makerdao.com)
+* Point codebase to the new [MCD smart contracts](https://changelog.makerdao.com/)
 
 ### As a Lending Protocol
 
@@ -242,7 +242,7 @@ Alternatively, if you’re willing to do some additional work and work with a lo
   * List the Multi-Collateral Dai token as "Dai". The new token is deployed at [0x6b175474e89094c44da98b954eedeac495271d0f](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) - use the [updated logos found here](https://www.notion.so/makerdao/Maker-Brand-ac517c82ff9a43089d0db5bb2ee045a4) for the new Dai token.
   * Launch support for Dai loans.
   * Stop creation of loans in Sai
-  * Point users to [migrate.makerdao.com](https://migrate.makerdao.com) for Sai migration
+  * Point users to [migrate.makerdao.com](https://migrate.makerdao.com/) for Sai migration
   * Let existing loans in Sai run until they expire or are paid back
 * Optional:
   * Create a UI for users to migrate their balances from Sai to Dai.
@@ -259,7 +259,7 @@ Alternatively, if you’re willing to do some additional work and work with a lo
 * If you have a product using Sai:
   * Shutdown functionality of Sai at a cut-off date, communicated well in advance to your users.
 * Inform your users about potential confusion regarding Sai and Dai.
-* Inform your users that they can migrate Sai to Dai at [migrate.makerdao.com](https://migrate.makerdao.com)
+* Inform your users that they can migrate Sai to Dai at [migrate.makerdao.com](https://migrate.makerdao.com/)
   * Optional: Create a UI for carrying out the migration from Sai to Dai.
 
 ### As another partner type not mentioned above
@@ -268,7 +268,7 @@ Please reach out to [integrate@makerdao.com](mailto:integrate@makerdao.com) and 
 
 ## Migration App
 
-Upon release of MCD, the Migration App at [migrate.makerdao.com](https://migrate.makerdao.com) will allow you to carry out Dai and CDP migration through an intuitive web UI in just a few clicks. By logging in with your favourite wallet solution, the app will scan your wallet for any recommended migrations and showcase them in the UI (seen in picture below). This migration scan feature is planned to be continually supported going forward, ensuring that users are always using an up-to-date version of the Maker platform.
+Upon release of MCD, the Migration App at [migrate.makerdao.com](https://migrate.makerdao.com/) will allow you to carry out Dai and CDP migration through an intuitive web UI in just a few clicks. By logging in with your favourite wallet solution, the app will scan your wallet for any recommended migrations and showcase them in the UI (seen in picture below). This migration scan feature is planned to be continually supported going forward, ensuring that users are always using an up-to-date version of the Maker platform.
 
 ![](https://camo.githubusercontent.com/5b22fab66572ce94685d96c28dfa34ef0c348ed2/68747470733a2f2f6c68342e676f6f676c6575736572636f6e74656e742e636f6d2f346c44634533443439584b746c724c532d614143444b3073307638336d3447347a77705a726d575a4c364c53326b3844726a44705946452d7957316e78342d72643871615878504a684c5a6e636a6d4e6c7a65436b316f6474704a796e4e527a48336579434f316a6d665033563639624c444e6151794d4b344c74786f494d30374266646b323465)
 
@@ -282,7 +282,7 @@ _Wizard for migrating Sai to Dai._
 
 _Wizard for migrating an SCD CDP to MCD CDP._
 
-The Migration App uses a proxy contract to carry out the CDP migration. Consequently, the app can also only be used for CDPs that have been created through a Maker proxy contract. This happens automatically if you have opened your CDP at [cdp.makerdao.com](https://cdp.makerdao.com).
+The Migration App uses a proxy contract to carry out the CDP migration. Consequently, the app can also only be used for CDPs that have been created through a Maker proxy contract. This happens automatically if you have opened your CDP at [cdp.makerdao.com](https://cdp.makerdao.com/).
 
 If you have created CDPs using third party services that do not use Maker proxies to interact with the CDP core, the migration contract might not work. Instead, you can perform your own manual migration by simply closing down your SCD CDP and moving the ETH to an MCD CDP.
 
@@ -332,7 +332,7 @@ The migration contract also allows users to migrate their CDPs from the SCD core
 
 However, in order to close down the CDP, a stability fee in MKR must be paid, so you need to grant the migration contract approval to spend MKR from you account to carry out the migration.
 
-The migration contract uses a proxy contract to carry out all the above steps in one go. Consequently, the contract can also only be used for CDPs that have been created through a Maker proxy contract. This happens automatically if you have opened your CDP at [cdp.makerdao.com](https://cdp.makerdao.com). Therefore, you must utilize the [MigrationProxyActions.sol](https://github.com/makerdao/scd-mcd-migration/blob/master/src/MigrationProxyActions.sol) contract to carry out the [migrate function call](https://github.com/makerdao/scd-mcd-migration/blob/master/src/MigrationProxyActions.sol#L38).
+The migration contract uses a proxy contract to carry out all the above steps in one go. Consequently, the contract can also only be used for CDPs that have been created through a Maker proxy contract. This happens automatically if you have opened your CDP at [cdp.makerdao.com](https://cdp.makerdao.com/). Therefore, you must utilize the [MigrationProxyActions.sol](https://github.com/makerdao/scd-mcd-migration/blob/master/src/MigrationProxyActions.sol) contract to carry out the [migrate function call](https://github.com/makerdao/scd-mcd-migration/blob/master/src/MigrationProxyActions.sol#L38).
 
 If you have created CDPs using third party services that do not use Maker proxies to interact with the CDP core, the migration contract might not work. Instead, you can perform your own manual migration by simply closing down your SCD CDP and moving the ETH to an MCD CDP.
 
