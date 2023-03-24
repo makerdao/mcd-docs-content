@@ -7,7 +7,7 @@ description: Enables any user to execute a flash mint of Dai.
 * **Contract Name:** flash.sol
 * **Type/Category:** DSS
 * [**Contract Source**](https://github.com/makerdao/dss-flash/blob/master/src/flash.sol)
-* [**Etherscan**](https://etherscan.io/address/0x1EB4CF3A948E7D72A198fe073cCb8C7a948cD853)
+* [**Etherscan**](https://etherscan.io/address/0x60744434d6339a6B27d73d9Eda62b6F66a0a04FA)
 
 ### 1. Introduction \(Summary\)
 
