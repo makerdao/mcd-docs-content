@@ -40,7 +40,7 @@ The Oracle Module has 2 core components consisting of the `Median` and `OSM` con
 * You can read straight from the median and in return, you would get a more real-time price. However, this depends on the cadence of updates (calls to poke).
 * The OSM is similar but has a 1-hour price delay. It has the same process for reading (whitelist, auth, read and peek) as a median. The way the OSM works, is you cannot update it directly but you can `poke` it to go and read from something that also has the same structure (the `peek` method - in this case, its the median but you can set it to read from anything that conforms to the same interface).
 * Whenever the OSM reads from a source, it queues the value that it reads for the following hour or following `hop` property, which is set to 1 hour (but can be anything). When it is `poke`'d, it reads the value of the median and it will save the value. Then the previous value becomes that, so it is always off by an hour. After an hour passes, when `poke`d, the value that it saved becomes the current value and whatever value is in the median becomes the future value for the next hour.
-* `spot` - if you poke it with an ilk (ex: ETH) it will read form the OSM and if the price is valid, it updates.
+* `spot` - if you poke it with an ilk (ex: ETH) it will read from the OSM and if the price is valid, it updates.
 
 #### Relationship to the `Spot`'ter:
 
